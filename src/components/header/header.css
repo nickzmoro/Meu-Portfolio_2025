@@ -1,0 +1,3 @@
+.link-menu {
+  @apply text-base font-[400] text-[#ffffffc0] hover:text-[#ffffff] transition ease-in-out duration-200;
+}
