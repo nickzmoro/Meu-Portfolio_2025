@@ -17,3 +17,8 @@ body,
 html {
   overflow-x: hidden;
 }
+
+::selection {
+  background-color: #404cd1;
+  color: #fff;
+}
