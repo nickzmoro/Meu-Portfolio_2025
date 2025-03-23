@@ -5,7 +5,7 @@ import "./header.css";
 const Header = () => {
   return (
     <>
-      <header className="w-screen flex justify-center px-10 py-5 bg-[#0c0e239f] border-b-[1px] border-b-[#ffffff25]">
+      <header className="w-screen flex fixed top-0 left-0 z-50 justify-center px-10 py-5 bg-[transparent]">
         <div className="container flex justify-between items-center">
           <div className="logo">
             <a href="#" className="text-3xl font-[700] uppercase">

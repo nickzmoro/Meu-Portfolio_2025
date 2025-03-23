@@ -1,0 +1,3 @@
+.social-icon {
+  @apply px-2 py-2 bg-[#ffffff10] border-[1px] border-[#ccc] rounded-full hover:bg-[#ffffff20] transition-all duration-200;
+}
