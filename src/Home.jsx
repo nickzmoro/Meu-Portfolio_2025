@@ -5,6 +5,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 // arquivos
 import Header from "./components/header/header";
+import ProgressBarSkills from "./components/progressBarSkills/skills";
 import "./Home.css";
 import MeuCurriculo from "./assets/Meu-curriculo.pdf";
 
@@ -109,7 +110,7 @@ function Home() {
                 <div>
                   <h3 className="section-name">Sobre mim</h3>
                   <h2 className="subtitle">Quem eu sou?</h2>
-                  <div className="line-divisor-content w-[100px] h-[2px] bg-[#404CD1] mt-2.5 mb-3 rounded-[10px] shadow-[0_5px_10px_#404cd1c5]"></div>
+                  <div className="line-divisor-content mt-2.5 mb-3"></div>
                   <p className="about-description-p mb-1.5">
                     Sou um desenvolvedor front-end de 16 anos, focado em criar
                     interfaces modernas e responsivas. Trabalho em projetos
@@ -153,6 +154,65 @@ function Home() {
                       />
                     </a>
                   </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Skills */}
+        <section className="skills w-screen h-screen flex justify-center items-center">
+          <div className="skills-container w-[80%] h-[90%]">
+            <div className="section-title-container">
+              <h3 className="section-name">Tecnologias</h3>
+              <h2 className="subtitle">Minhas Habilidades</h2>
+              <div className="line-divisor-content"></div>
+            </div>
+            <div className="skills-container">
+              <div className="skills-grid">
+                <div>
+                  <ProgressBarSkills
+                    children={"HTML5"}
+                    sizeProgressBar={"400px"}
+                    colorTechnology={"bg-[#E44D25]"}
+                  />
+                  <ProgressBarSkills
+                    children={"CSS3"}
+                    sizeProgressBar={"350px"}
+                    colorTechnology={"bg-[#0089CA]"}
+                  />
+                  <ProgressBarSkills
+                    children={"JavaScript"}
+                    sizeProgressBar={"300px"}
+                    colorTechnology={"bg-[#F0DB4F]"}
+                  />
+                  <ProgressBarSkills
+                    children={"TypeScript"}
+                    sizeProgressBar={"150px"}
+                    colorTechnology={"bg-[#3178C6]"}
+                  />
+                  <ProgressBarSkills
+                    children={"React.JS"}
+                    sizeProgressBar={"300px"}
+                    colorTechnology={"bg-[#57BDD9]"}
+                  />
+                </div>
+                <div>
+                  <ProgressBarSkills
+                    children={"Git"}
+                    sizeProgressBar={"350px"}
+                    colorTechnology={"bg-[#F05133]"}
+                  />
+                  <ProgressBarSkills
+                    children={"Bootstrap"}
+                    sizeProgressBar={"300px"}
+                    colorTechnology={"bg-[#7311F6]"}
+                  />
+                  <ProgressBarSkills
+                    children={"TailwindCSS"}
+                    sizeProgressBar={"350px"}
+                    colorTechnology={"bg-[#38BDF8]"}
+                  />
                 </div>
               </div>
             </div>
