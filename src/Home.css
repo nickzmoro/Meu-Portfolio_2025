@@ -13,3 +13,7 @@
 .about-description-p {
   @apply text-[#ccc] text-[1rem] max-w-[800px];
 }
+
+.line-divisor-content {
+  @apply w-[100px] h-[2px] bg-[#404CD1] rounded-[10px] shadow-[0_5px_10px_#404cd1c5];
+}
