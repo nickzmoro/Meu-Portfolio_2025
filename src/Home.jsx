@@ -1,3 +1,5 @@
+// import do React
+
 // ícones
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
 import { HiOutlineDownload } from "react-icons/hi";
@@ -14,6 +16,7 @@ import programmer from "./assets/images/emoji-programmer.png";
 import spotlight from "./assets/images/spotlight.png";
 import bgHome from "./assets/images/background-home.png";
 import me from "./assets/images/me.png";
+import gitHubLogo from "./assets/images/github-svg.svg";
 
 function Home() {
   return (
@@ -161,16 +164,19 @@ function Home() {
         </section>
 
         {/* Skills */}
-        <section className="skills w-screen h-screen flex justify-center items-center">
-          <div className="skills-container w-[80%] h-[90%]">
-            <div className="section-title-container">
-              <h3 className="section-name">Tecnologias</h3>
+        <section
+          className="skills relative w-screen h-screen flex justify-center items-center"
+          id="skills"
+        >
+          <div className="skills-container w-[80%] h-[90%] flex flex-col justify-center items-center gap-10">
+            <div className="section-title-container flex flex-col gap-2 items-center">
+              <h3 className="section-name flex items-center">Tecnologias</h3>
               <h2 className="subtitle">Minhas Habilidades</h2>
-              <div className="line-divisor-content"></div>
+              <div className="line-divisor-content mt-2"></div>
             </div>
             <div className="skills-container">
-              <div className="skills-grid">
-                <div>
+              <div className="skills-grid flex justify-between gap-40">
+                <div className="flex flex-col gap-4">
                   <ProgressBarSkills
                     children={"HTML5"}
                     sizeProgressBar={"400px"}
@@ -183,7 +189,7 @@ function Home() {
                   />
                   <ProgressBarSkills
                     children={"JavaScript"}
-                    sizeProgressBar={"300px"}
+                    sizeProgressBar={"350px"}
                     colorTechnology={"bg-[#F0DB4F]"}
                   />
                   <ProgressBarSkills
@@ -197,22 +203,60 @@ function Home() {
                     colorTechnology={"bg-[#57BDD9]"}
                   />
                 </div>
-                <div>
-                  <ProgressBarSkills
-                    children={"Git"}
-                    sizeProgressBar={"350px"}
-                    colorTechnology={"bg-[#F05133]"}
-                  />
-                  <ProgressBarSkills
-                    children={"Bootstrap"}
-                    sizeProgressBar={"300px"}
-                    colorTechnology={"bg-[#7311F6]"}
-                  />
-                  <ProgressBarSkills
-                    children={"TailwindCSS"}
-                    sizeProgressBar={"350px"}
-                    colorTechnology={"bg-[#38BDF8]"}
-                  />
+                <div className="flex flex-col justify-between">
+                  <div className="flex flex-col gap-4">
+                    <ProgressBarSkills
+                      children={"Git"}
+                      sizeProgressBar={"350px"}
+                      colorTechnology={"bg-[#F05133]"}
+                    />
+                    <ProgressBarSkills
+                      children={"Bootstrap"}
+                      sizeProgressBar={"300px"}
+                      colorTechnology={"bg-[#7311F6]"}
+                    />
+                    <ProgressBarSkills
+                      children={"TailwindCSS"}
+                      sizeProgressBar={"350px"}
+                      colorTechnology={"bg-[#38BDF8]"}
+                    />
+                  </div>
+
+                  <div className="flex flex-col gap-2">
+                    <p className="font-semibold text-[1.1rem]">Ferramentas:</p>
+                    <div className="flex gap-1">
+                      <div className="svg-box">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          x="0px"
+                          y="0px"
+                          width="32"
+                          height="32"
+                          viewBox="0 0 48 48"
+                        >
+                          <path
+                            fill="#29b6f6"
+                            d="M44,11.11v25.78c0,1.27-0.79,2.4-1.98,2.82l-8.82,4.14L34,33V15L33.2,4.15l8.82,4.14 C43.21,8.71,44,9.84,44,11.11z"
+                          ></path>
+                          <path
+                            fill="#0277bd"
+                            d="M9,33.896L34,15V5.353c0-1.198-1.482-1.758-2.275-0.86L4.658,29.239 c-0.9,0.83-0.849,2.267,0.107,3.032c0,0,1.324,1.232,1.803,1.574C7.304,34.37,8.271,34.43,9,33.896z"
+                          ></path>
+                          <path
+                            fill="#0288d1"
+                            d="M9,14.104L34,33v9.647c0,1.198-1.482,1.758-2.275,0.86L4.658,18.761 c-0.9-0.83-0.849-2.267,0.107-3.032c0,0,1.324-1.232,1.803-1.574C7.304,13.63,8.271,13.57,9,14.104z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <div className="svg-box">
+                        <img
+                          src={gitHubLogo}
+                          alt="Git Hub"
+                          className="w-[32px] h-[32px]"
+                        />
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

@@ -17,3 +17,7 @@
 .line-divisor-content {
   @apply w-[100px] h-[2px] bg-[#404CD1] rounded-[10px] shadow-[0_5px_10px_#404cd1c5];
 }
+
+.svg-box {
+  @apply px-1 py-1 bg-[#ffffff1e] rounded-lg border border-[#ffffff17];
+}
