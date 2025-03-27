@@ -1,11 +1,28 @@
+import { useState } from "react";
 import { HiOutlineDownload } from "react-icons/hi";
 import MeuCurriculo from "../../assets/Meu-curriculo.pdf";
 import "./header.css";
 
 const Header = () => {
+  const [changeHeader, setChangeHeader] = useState(false);
+
+  window.onscroll = () => {
+    if (window.scrollY > 150) {
+      setChangeHeader(true);
+    } else {
+      setChangeHeader(false);
+    }
+  };
+
   return (
     <>
-      <header className="w-screen flex fixed top-0 left-0 z-50 justify-center px-10 py-5 bg-[transparent]">
+      <header
+        className={`w-screen flex fixed top-0 left-0 z-50 border-b border-b-[#fff1] justify-center px-10 py-5 transition ease-in-out duration-200 ${
+          changeHeader
+            ? "bg-[#ffffff02] backdrop-blur-[25px]"
+            : "bg-transparent"
+        }`}
+      >
         <div className="container flex justify-between items-center">
           <div className="logo">
             <a href="#" className="text-3xl font-[700] uppercase">
@@ -21,7 +38,7 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="link-menu">
+                  <a href="#skills" className="link-menu">
                     Habilidades
                   </a>
                 </li>
