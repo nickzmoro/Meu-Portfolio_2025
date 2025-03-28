@@ -33,17 +33,17 @@ const Header = () => {
             <nav>
               <ul className="flex gap-10">
                 <li>
-                  <a href="#about-me" className="link-menu">
+                  <a href="#sobre-mim" className="link-menu">
                     Sobre mim
                   </a>
                 </li>
                 <li>
-                  <a href="#skills" className="link-menu">
+                  <a href="#habilidades" className="link-menu">
                     Habilidades
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="link-menu">
+                  <a href="#projetos" className="link-menu">
                     Projetos
                   </a>
                 </li>

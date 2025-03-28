@@ -102,7 +102,7 @@ function Home() {
         {/* About */}
         <section
           className="about w-screen h-screen flex justify-center items-center"
-          id="about-me"
+          id="sobre-mim"
         >
           <div className="about-container w-[80%] h-[53%] flex justify-center items-center px-5">
             <div className="card-about h-full flex items-start gap-8 px-8 py-8 border-[1px] border-[#ffffff15] bg-[linear-gradient(to_right,#04071D_0%,#0C0E23_100%)] rounded-[20px]">
@@ -166,11 +166,11 @@ function Home() {
         {/* Skills */}
         <section
           className="skills relative w-screen h-screen flex justify-center items-center"
-          id="skills"
+          id="habilidades"
         >
           <div className="skills-container w-[80%] h-[90%] flex flex-col justify-center items-center gap-10">
             <div className="section-title-container flex flex-col gap-2 items-center">
-              <h3 className="section-name flex items-center">Tecnologias</h3>
+              <h3 className="section-name">Tecnologias</h3>
               <h2 className="subtitle">Minhas Habilidades</h2>
               <div className="line-divisor-content mt-2"></div>
             </div>
@@ -179,27 +179,27 @@ function Home() {
                 <div className="flex flex-col gap-4">
                   <ProgressBarSkills
                     children={"HTML5"}
-                    sizeProgressBar={"400px"}
+                    sizeProgressBar={"500px"}
                     colorTechnology={"bg-[#E44D25]"}
                   />
                   <ProgressBarSkills
                     children={"CSS3"}
-                    sizeProgressBar={"350px"}
+                    sizeProgressBar={"450px"}
                     colorTechnology={"bg-[#0089CA]"}
                   />
                   <ProgressBarSkills
                     children={"JavaScript"}
-                    sizeProgressBar={"350px"}
+                    sizeProgressBar={"450px"}
                     colorTechnology={"bg-[#F0DB4F]"}
                   />
                   <ProgressBarSkills
                     children={"TypeScript"}
-                    sizeProgressBar={"150px"}
+                    sizeProgressBar={"250px"}
                     colorTechnology={"bg-[#3178C6]"}
                   />
                   <ProgressBarSkills
                     children={"React.JS"}
-                    sizeProgressBar={"300px"}
+                    sizeProgressBar={"400px"}
                     colorTechnology={"bg-[#57BDD9]"}
                   />
                 </div>
@@ -207,17 +207,17 @@ function Home() {
                   <div className="flex flex-col gap-4">
                     <ProgressBarSkills
                       children={"Git"}
-                      sizeProgressBar={"350px"}
+                      sizeProgressBar={"450px"}
                       colorTechnology={"bg-[#F05133]"}
                     />
                     <ProgressBarSkills
                       children={"Bootstrap"}
-                      sizeProgressBar={"300px"}
+                      sizeProgressBar={"400px"}
                       colorTechnology={"bg-[#7311F6]"}
                     />
                     <ProgressBarSkills
                       children={"TailwindCSS"}
-                      sizeProgressBar={"350px"}
+                      sizeProgressBar={"450px"}
                       colorTechnology={"bg-[#38BDF8]"}
                     />
                   </div>
@@ -260,6 +260,21 @@ function Home() {
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        {/* Projects */}
+        <section
+          className="projects w-screen h-screen flex justify-center items-center"
+          id="projetos"
+        >
+          <div className="projects-container w-[80%] h-[90%] flex flex-col gap-5">
+            <div className="projects-title flex flex-col justify-center items-center gap-2">
+              <h3 className="section-name">Projetos</h3>
+              <h2 className="subtitle">Meus Projetos</h2>
+              <div className="line-divisor-content mt-2"></div>
+            </div>
+            <div className="projects-carousel"></div>
           </div>
         </section>
       </main>
