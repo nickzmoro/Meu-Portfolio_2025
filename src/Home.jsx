@@ -1,4 +1,8 @@
-// import do React
+// import do React ou bibliotecas
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
 
 // ícones
 import { FaLinkedin, FaGithub, FaInstagram } from "react-icons/fa";
@@ -268,13 +272,48 @@ function Home() {
           className="projects w-screen h-screen flex justify-center items-center"
           id="projetos"
         >
-          <div className="projects-container w-[80%] h-[90%] flex flex-col gap-5">
+          <div className="projects-container w-[80%] h-[90%] flex flex-col justify-evenly gap-2">
             <div className="projects-title flex flex-col justify-center items-center gap-2">
               <h3 className="section-name">Projetos</h3>
               <h2 className="subtitle">Meus Projetos</h2>
               <div className="line-divisor-content mt-2"></div>
             </div>
-            <div className="projects-carousel"></div>
+            <div className="projects-carousel relative">
+              <Swiper
+                slidesPerView={4}
+                spaceBetween={30}
+                grabCursor={true}
+                className="mySwiper w-[100%] h-[500px]"
+              >
+                <SwiperSlide className="carousel-container">
+                  Slide 1
+                </SwiperSlide>
+                <SwiperSlide className="carousel-container">
+                  Slide 2
+                </SwiperSlide>
+                <SwiperSlide className="carousel-container">
+                  Slide 3
+                </SwiperSlide>
+                <SwiperSlide className="carousel-container">
+                  Slide 4
+                </SwiperSlide>
+                <SwiperSlide className="carousel-container">
+                  Slide 5
+                </SwiperSlide>
+                <SwiperSlide className="carousel-container">
+                  Slide 6
+                </SwiperSlide>
+                <SwiperSlide className="carousel-container">
+                  Slide 7
+                </SwiperSlide>
+                <SwiperSlide className="carousel-container">
+                  Slide 8
+                </SwiperSlide>
+                <SwiperSlide className="carousel-container">
+                  Slide 9
+                </SwiperSlide>
+              </Swiper>
+            </div>
           </div>
         </section>
       </main>

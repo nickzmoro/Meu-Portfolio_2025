@@ -21,3 +21,7 @@
 .svg-box {
   @apply px-1 py-1 bg-[#ffffff1e] rounded-lg border border-[#ffffff17];
 }
+
+.carousel-container {
+  @apply bg-[#ffffff1e] border border-[#ffffff17] rounded-xl;
+}
