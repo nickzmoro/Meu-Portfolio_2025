@@ -14,6 +14,7 @@ import Header from "./components/header/header";
 import ProgressBarSkills from "./components/progressBarSkills/skills";
 import "./Home.css";
 import MeuCurriculo from "./assets/Meu-curriculo.pdf";
+import CardXp from "./components/card/cardXp";
 
 // images
 import programmer from "./assets/images/emoji-programmer.png";
@@ -313,6 +314,49 @@ function Home() {
                   Slide 9
                 </SwiperSlide>
               </Swiper>
+            </div>
+          </div>
+        </section>
+
+        {/* Experience */}
+        <section
+          className="experience w-screen h-screen flex justify-center items-center"
+          id="experiência"
+        >
+          <div className="experience-content w-[80%] h-[60%] flex flex-col items-center justify-evenly gap-5">
+            <div className="exp-title flex flex-col justify-center items-center gap-2">
+              <h3 className="section-name">Experiência</h3>
+              <h2 className="subtitle">Minha Trajetória</h2>
+              <div className="line-divisor-content mt-2"></div>
+            </div>
+            <div className="exp-cards flex items-end gap-10">
+              <CardXp
+                date="2023"
+                title="Primeiro contato com a programação"
+                description="Lorem ipsum habit app usp imup async await function year love lorem ipsum"
+                className="translate-y-5"
+              />
+              <div className="timeline flex flex-col items-center mb-3">
+                <div className="line-smaller w-[1px] h-[60px] bg-white"></div>
+                <div className="ball w-[25px] h-[25px] border border-white rounded-full"></div>
+                <div className="line-bigger w-[1px] h-[120px] bg-white"></div>
+                <div className="ball w-[25px] h-[25px] border border-white rounded-full"></div>
+                <div className="line-smaller w-[1px] h-[60px] bg-white"></div>
+              </div>
+              <CardXp
+                date="2024 - Atual"
+                title="Desenvolvedor Front-End Freelancer"
+                description="Lorem ipsum habit app usp imup async await function year love lorem ipsum"
+                technologies={[
+                  { name: "HTML5", img: "/assets/html.png" },
+                  { name: "CSS3", img: "/assets/css.png" },
+                  { name: "JavaScript", img: "/assets/javascript.png" },
+                  { name: "ReactJS", img: "/assets/react.png" },
+                  { name: "Git", img: "/assets/git.png" },
+                  { name: "Bootstrap", img: "/assets/bootstrap.png" },
+                  { name: "TailwindCSS", img: "/assets/tailwind-css.png" },
+                ]}
+              />
             </div>
           </div>
         </section>

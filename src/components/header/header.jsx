@@ -48,7 +48,7 @@ const Header = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="link-menu">
+                  <a href="#experiência" className="link-menu">
                     Experiências
                   </a>
                 </li>
