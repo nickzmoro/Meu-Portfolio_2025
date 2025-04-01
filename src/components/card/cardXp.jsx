@@ -24,7 +24,7 @@ const CardXp = ({ date, title, description, technologies }) => {
                       src={item.img}
                       alt={item.name}
                       className={`${
-                        item.name === "JavaScript"
+                        item.name === "JavaScript" && "Styled-Components"
                           ? "w-[15px] h-[15px] mr-[1px]"
                           : "w-[22px]"
                       } h-[22px] saturate-0 group-hover:saturate-100 transition-all ease-in-out duration-200`}
