@@ -11,6 +11,7 @@ import { MdOutlineArrowOutward } from "react-icons/md";
 
 // arquivos
 import Header from "./components/header/header";
+import Footer from "./components/footer/footer";
 import ProgressBarSkills from "./components/progressBarSkills/skills";
 import "./Home.css";
 import MeuCurriculo from "./assets/Meu-curriculo.pdf";
@@ -355,12 +356,19 @@ function Home() {
                   { name: "Git", img: "/assets/git.png" },
                   { name: "Bootstrap", img: "/assets/bootstrap.png" },
                   { name: "TailwindCSS", img: "/assets/tailwind-css.png" },
+                  {
+                    name: "Styled-Components",
+                    img: "/assets/styled-components.png",
+                  },
                 ]}
               />
             </div>
           </div>
         </section>
       </main>
+
+      {/* Footer */}
+      <Footer />
     </>
   );
 }
