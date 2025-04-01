@@ -339,9 +339,9 @@ function Home() {
               />
               <div className="timeline flex flex-col items-center mb-3">
                 <div className="line-smaller w-[1px] h-[60px] bg-white"></div>
-                <div className="ball w-[25px] h-[25px] border border-white rounded-full"></div>
+                <div className="ball w-[25px] h-[25px] border border-white rounded-full hover:bg-[#404cd175] transition-all ease-in-out duration-200"></div>
                 <div className="line-bigger w-[1px] h-[120px] bg-white"></div>
-                <div className="ball w-[25px] h-[25px] border border-white rounded-full"></div>
+                <div className="ball w-[25px] h-[25px] border border-white rounded-full hover:bg-[#404cd175] transition-all ease-in-out duration-200"></div>
                 <div className="line-smaller w-[1px] h-[60px] bg-white"></div>
               </div>
               <CardXp

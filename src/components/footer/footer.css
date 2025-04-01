@@ -1,0 +1,7 @@
+.nav-container {
+  @apply flex flex-col gap-[1px];
+}
+
+.nav-link {
+  @apply text-[#ccc] hover:text-[#e7e7e7] transition-all ease-in-out duration-200;
+}
