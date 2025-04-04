@@ -1,0 +1,11 @@
+.form-input {
+  @apply py-2 px-3 rounded-[6px] outline-none bg-[#ffffff0e] border border-[#ffffff15] text-[0.9rem];
+}
+
+.form-block {
+  @apply flex flex-col gap-1;
+}
+
+.asterisk {
+  @apply text-[#959eff];
+}
