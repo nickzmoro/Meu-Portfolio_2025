@@ -23,31 +23,31 @@ const Footer = () => {
               </div>
               <div className="nav-container">
                 <p className="mb-1">Sobre</p>
-                <a href="#" className="nav-link">
+                <a href="#sobre-mim" className="nav-link">
                   Sobre mim
                 </a>
-                <a href="#" className="nav-link">
+                <a href="#sobre-mim" className="nav-link">
                   Currículo
                 </a>
               </div>
               <div className="nav-container">
                 <p className="mb-1">Habilidades</p>
-                <a href="#" className="nav-link">
+                <a href="#habilidades" className="nav-link">
                   Tecnologias
                 </a>
-                <a href="#" className="nav-link">
+                <a href="#habilidades" className="nav-link">
                   Ferramentas
                 </a>
               </div>
               <div className="nav-container">
                 <p className="mb-1">Projetos</p>
-                <a href="#" className="nav-link">
+                <a href="#projetos" className="nav-link">
                   Ver projetos
                 </a>
               </div>
               <div className="nav-container">
                 <p className="mb-1">Experiências</p>
-                <a href="#" className="nav-link">
+                <a href="#experiência" className="nav-link">
                   Minha jornada
                 </a>
               </div>
