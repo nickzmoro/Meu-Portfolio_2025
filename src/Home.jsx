@@ -16,6 +16,7 @@ import ProgressBarSkills from "./components/progressBarSkills/skills";
 import "./Home.css";
 import MeuCurriculo from "./assets/Meu-curriculo.pdf";
 import CardXp from "./components/card/cardXp";
+import FormContact from "./components/form/form";
 
 // images
 import programmer from "./assets/images/emoji-programmer.png";
@@ -365,6 +366,9 @@ function Home() {
             </div>
           </div>
         </section>
+
+        {/* Form Contact */}
+        <FormContact />
       </main>
 
       {/* Footer */}

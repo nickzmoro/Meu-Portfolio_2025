@@ -57,7 +57,7 @@ const Header = () => {
           </div>
           <div className="btn-contact-cv flex items-center gap-2">
             <a
-              href="#"
+              href="#contato"
               className="px-8 py-2 rounded-[15px] border-[1px] border-[#ffffff65] bg-[radial-gradient(circle_at_center,#141841_0%,#0C0E23_100%)] hover:brightness-90 transition ease-in-out duration-200"
             >
               Contato
