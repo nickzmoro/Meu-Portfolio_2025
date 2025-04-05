@@ -18,7 +18,7 @@ const CardXp = ({ date, title, description, technologies }) => {
                 {technologies.map((item, index) => (
                   <div
                     key={index}
-                    className="group flex gap-1 items-center px-[10px] py-[2px] bg-[#ffffff0e] rounded-full border border-[#ffffff17] cursor-default"
+                    className="techs group flex gap-1 items-center px-[10px] py-[2px] bg-[#ffffff0e] rounded-full border border-[#ffffff17] cursor-default"
                   >
                     <img
                       src={item.img}
@@ -29,7 +29,7 @@ const CardXp = ({ date, title, description, technologies }) => {
                           : "w-[20px]"
                       } h-[20px] saturate-0 group-hover:saturate-100 transition-all ease-in-out duration-200`}
                     ></img>
-                    <p className="text-[#808080] text-[0.95rem] font-[500] group-hover:text-[#ffffffc4] transition-all ease-in-out duration-200">
+                    <p className="techs text-[#808080] text-[0.95rem] font-[500] group-hover:text-[#ffffffc4] transition-all ease-in-out duration-200">
                       {item.name}
                     </p>
                   </div>
