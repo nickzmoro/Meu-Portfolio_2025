@@ -71,20 +71,26 @@ const Form = () => {
 
   function renderStatus() {
     let message = error
-      ? `Erro. Envie novamente mais tarde`
+      ? `Erro. Envie novamente mais tarde..`
       : `Obrigado pelo contato! Responderei assim que possível.`;
 
     return (
       <div className="formcarry-block mt-3">
         <div
-          className={`formcarry-message-block active relative flex justify-start px-10 py-6 rounded-[6px] bg-[#080916] border-l-[4px] border-l-[#5564FF]`}
+          className={`formcarry-message-block active relative flex justify-start px-10 py-6 rounded-[6px] bg-[#080916] border-l-[4px] ${
+            error ? "border-l-[#FF0000]" : "border-l-[#5564FF]"
+          }`}
         >
           <div className="fc-message-content text-[0.95rem]">{message}</div>
           <div
-            className="fc-message-close absolute top-[10px] right-[15px] px-[2px] py-[2px] rounded-full cursor-pointer bg-[#5563ff21] hover:bg-[#5563ff31] transition-all ease-in-out duration-200"
+            className={`fc-message-close absolute top-[10px] right-[15px] px-[2px] py-[2px] rounded-full cursor-pointer ${
+              error
+                ? "bg-[#ff000027] hover:bg-[#ff000018]"
+                : "bg-[#5563ff21] hover:bg-[#5563ff31]"
+            } bg-[#5563ff21] transition-all ease-in-out duration-200`}
             onClick={() => resetStates()}
           >
-            <IoClose fill="#5564FF" size={22} />
+            <IoClose fill={`${error ? "#FF0000" : "#5564FF"}`} size={22} />
           </div>
         </div>
       </div>
@@ -178,7 +184,8 @@ const Form = () => {
               {showNotification && renderStatus()}
             </form>
           </div>
-          <div className="w-[40%]">
+          <div className="w-[40%] relative">
+            <div className="gradient-img absolute w-full h-full bg-[linear-gradient(to_right,#0C0E23_10%,#0c0e2350_100%)]"></div>
             <img
               src={bgForm}
               alt="background-form-coding"
