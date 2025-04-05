@@ -1,8 +1,9 @@
 import { useState } from "react";
 import bgForm from "../../assets/images/background-form.png";
 import "./form.css";
-import { FaRocket } from "react-icons/fa6";
-import { RingLoader } from "react-spinners";
+import { ClipLoader } from "react-spinners";
+import { IoClose } from "react-icons/io5";
+import { FaCheck } from "react-icons/fa";
 
 const Form = () => {
   const [name, setName] = useState("");
@@ -70,16 +71,21 @@ const Form = () => {
 
   function renderStatus() {
     let message = error
-      ? `Algo deu errado.`
-      : `Obrigado por entrar em contato, em breve verei o que você tem para me dizer!`;
-    let icon = error ? "error" : "success";
+      ? `Erro. Envie novamente mais tarde`
+      : `Obrigado pelo contato! Responderei assim que possível.`;
 
     return (
-      <div className="formcarry-block">
-        <div className={`formcarry-message-block fc-${icon} active`}>
-          <div className="fc-message-icon"></div>
-          <div className="fc-message-content">{message}</div>
-          <div className="fc-message-close" onClick={() => resetStates()}></div>
+      <div className="formcarry-block mt-3">
+        <div
+          className={`formcarry-message-block active relative flex justify-start px-10 py-6 rounded-[6px] bg-[#080916] border-l-[4px] border-l-[#5564FF]`}
+        >
+          <div className="fc-message-content text-[0.95rem]">{message}</div>
+          <div
+            className="fc-message-close absolute top-[10px] right-[15px] px-[2px] py-[2px] rounded-full cursor-pointer bg-[#5563ff21] hover:bg-[#5563ff31] transition-all ease-in-out duration-200"
+            onClick={() => resetStates()}
+          >
+            <IoClose fill="#5564FF" size={22} />
+          </div>
         </div>
       </div>
     );
@@ -92,9 +98,12 @@ const Form = () => {
     >
       <div className="w-[80%] h-[70%] bg-[#0C0E23] border border-[#ffffff15] rounded-xl overflow-hidden">
         <div className="flex justify-between items-start">
-          <div className="px-[60px] py-[60px] flex flex-col gap-5">
+          <div className="px-[60px] py-[50px] flex flex-col gap-5">
             <div>
-              <h3 className="subtitle mb-2">Entre em contato</h3>
+              <h3 className="subtitle mb-2">
+                <span className="text-[#5564FF]">&lt;</span>Entre em contato
+                <span className="text-[#5564FF]">&#47;&gt;</span>
+              </h3>
               <p className="text-[#ccc] text-[0.95rem]">
                 Fico à disposição para conversarmos sobre projetos, ideias ou
                 parcerias. <br /> Preencha o formulário abaixo e retornarei o
@@ -142,22 +151,28 @@ const Form = () => {
                   id="message"
                   placeholder="Digite a sua mensagem"
                   required
-                  className="form-input"
+                  className="form-input resize-none"
                 ></textarea>
               </div>
 
               <div className="formcarry-block">
-                <button
-                  type="submit"
-                  className="group min-w-full h-[45px] bg-[#5564FF] rounded-[6px] mt-3 font-[500] flex items-center justify-center hover:bg-[#5563ffdc] transition-all ease-in-out duration-200"
-                  disabled={loading}
-                >
-                  {loading ? (
-                    <RingLoader color="#fff" size={23} />
-                  ) : (
+                {loading ? (
+                  <button
+                    type="submit"
+                    className="group brightness-50 min-w-full h-[45px] bg-[#5564FF] rounded-[6px] mt-3 font-[500] flex items-center justify-center"
+                    disabled={loading}
+                  >
+                    <ClipLoader color="#fff" size={18} />
+                  </button>
+                ) : (
+                  <button
+                    type="submit"
+                    className="group min-w-full h-[45px] bg-[#5564FF] rounded-[6px] mt-3 font-[500] flex items-center justify-center hover:bg-[#5563ffdc] transition-all ease-in-out duration-200"
+                    disabled={loading}
+                  >
                     <>Enviar</>
-                  )}
-                </button>
+                  </button>
+                )}
               </div>
 
               {showNotification && renderStatus()}
