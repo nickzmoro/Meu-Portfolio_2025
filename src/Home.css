@@ -23,5 +23,5 @@
 }
 
 .carousel-container {
-  @apply bg-[#ffffff1e] border border-[#ffffff17] rounded-xl;
+  @apply bg-[#101229] border border-[#ffffff17] rounded-xl h-[600px];
 }

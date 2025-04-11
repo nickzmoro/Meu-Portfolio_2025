@@ -1,0 +1,19 @@
+.container-img {
+  @apply w-full h-[250px] overflow-hidden relative before:w-full before:h-full before:bg-[linear-gradient(to_top,#101229_0%,#ffffff11_100%)] before:absolute before:top-0 before:rounded-xl;
+}
+
+.img {
+  @apply rounded-xl object-cover w-full h-full object-center;
+}
+
+.content-container {
+  @apply px-6 py-6;
+}
+
+.project-info-container {
+  @apply border-b border-b-[#cccccc85] pb-5;
+}
+
+.tech-container {
+  @apply mt-2 flex gap-1 items-center flex-wrap;
+}

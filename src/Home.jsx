@@ -1,6 +1,3 @@
-// import do React ou bibliotecas
-import { Swiper, SwiperSlide } from "swiper/react";
-
 // Import Swiper styles
 import "swiper/css";
 
@@ -17,6 +14,7 @@ import "./Home.css";
 import MeuCurriculo from "./assets/Meu-curriculo.pdf";
 import CardXp from "./components/card/cardXp";
 import FormContact from "./components/form/form";
+import ProjectsCard from "./components/projectCard/projectCard";
 
 // images
 import programmer from "./assets/images/emoji-programmer.png";
@@ -281,41 +279,8 @@ function Home() {
               <h2 className="subtitle">Meus Projetos</h2>
               <div className="line-divisor-content mt-2"></div>
             </div>
-            <div className="projects-carousel relative">
-              <Swiper
-                slidesPerView={4}
-                spaceBetween={30}
-                grabCursor={true}
-                className="mySwiper w-[100%] h-[500px]"
-              >
-                <SwiperSlide className="carousel-container">
-                  Slide 1
-                </SwiperSlide>
-                <SwiperSlide className="carousel-container">
-                  Slide 2
-                </SwiperSlide>
-                <SwiperSlide className="carousel-container">
-                  Slide 3
-                </SwiperSlide>
-                <SwiperSlide className="carousel-container">
-                  Slide 4
-                </SwiperSlide>
-                <SwiperSlide className="carousel-container">
-                  Slide 5
-                </SwiperSlide>
-                <SwiperSlide className="carousel-container">
-                  Slide 6
-                </SwiperSlide>
-                <SwiperSlide className="carousel-container">
-                  Slide 7
-                </SwiperSlide>
-                <SwiperSlide className="carousel-container">
-                  Slide 8
-                </SwiperSlide>
-                <SwiperSlide className="carousel-container">
-                  Slide 9
-                </SwiperSlide>
-              </Swiper>
+            <div className="projects-carousel z-10">
+              <ProjectsCard />
             </div>
           </div>
         </section>
