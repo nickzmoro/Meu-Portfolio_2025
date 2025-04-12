@@ -1,5 +1,7 @@
 // import do React ou bibliotecas
 import { Swiper, SwiperSlide } from "swiper/react";
+import { FaGithub } from "react-icons/fa";
+import { HiLink } from "react-icons/hi";
 
 // Import Swiper styles
 import "swiper/css";
@@ -26,6 +28,20 @@ const Projects = () => {
       <SwiperSlide className="carousel-container">
         <div className="container-img">
           <img src={MaqSoft} alt="" className="img" loading="lazy" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[#10122996] opacity-0 hover:opacity-100 transition-all flex items-center justify-center gap-5">
+            <a href="https://github.com/nickzmoro/Maq-Soft" target="_blank">
+              <FaGithub
+                size={35}
+                className="hover:fill-[#d3d6fd] transition-all"
+              />
+            </a>
+            <a href="https://maq-soft.vercel.app/" target="_blank">
+              <HiLink
+                size={35}
+                className="hover:fill-[#d3d6fd] transition-all"
+              />
+            </a>
+          </div>
         </div>
         <div className="content-container">
           <div className="project-info-container">
@@ -57,6 +73,23 @@ const Projects = () => {
       <SwiperSlide className="carousel-container">
         <div className="container-img">
           <img src={MeuPortfolio} alt="" className="img" loading="lazy" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[#10122996] opacity-0 hover:opacity-100 transition-all flex items-center justify-center gap-5">
+            <a
+              href="https://github.com/nickzmoro/Meu-Portfolio_2025"
+              target="_blank"
+            >
+              <FaGithub
+                size={35}
+                className="hover:fill-[#d3d6fd] transition-all"
+              />
+            </a>
+            <a href="#">
+              <HiLink
+                size={35}
+                className="hover:fill-[#d3d6fd] transition-all"
+              />
+            </a>
+          </div>
         </div>
         <div className="content-container">
           <div className="project-info-container">
@@ -85,6 +118,26 @@ const Projects = () => {
       <SwiperSlide className="carousel-container">
         <div className="container-img">
           <img src={ToDoList} alt="" className="img" loading="lazy" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[#10122996] opacity-0 hover:opacity-100 transition-all flex items-center justify-center gap-5">
+            <a
+              href="https://github.com/nickzmoro/To-Do-List-ReactJS"
+              target="_blank"
+            >
+              <FaGithub
+                size={35}
+                className="hover:fill-[#d3d6fd] transition-all"
+              />
+            </a>
+            <a
+              href="https://to-do-list-react-js-peach.vercel.app/"
+              target="_blank"
+            >
+              <HiLink
+                size={35}
+                className="hover:fill-[#d3d6fd] transition-all"
+              />
+            </a>
+          </div>
         </div>
         <div className="content-container">
           <div className="project-info-container">
@@ -116,6 +169,20 @@ const Projects = () => {
       <SwiperSlide className="carousel-container">
         <div className="container-img">
           <img src={DolcciB} alt="" className="img" loading="lazy" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[#10122996] opacity-0 hover:opacity-100 transition-all flex items-center justify-center gap-5">
+            <a href="https://github.com/nickzmoro/Dolcci-B" target="_blank">
+              <FaGithub
+                size={35}
+                className="hover:fill-[#d3d6fd] transition-all"
+              />
+            </a>
+            <a href="https://dolccib.netlify.app/" target="_blank">
+              <HiLink
+                size={35}
+                className="hover:fill-[#d3d6fd] transition-all"
+              />
+            </a>
+          </div>
         </div>
         <div className="content-container">
           <div className="project-info-container">
@@ -142,6 +209,23 @@ const Projects = () => {
       <SwiperSlide className="carousel-container">
         <div className="container-img">
           <img src={MarcasDoAndre} alt="" className="img" loading="lazy" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[#10122996] opacity-0 hover:opacity-100 transition-all flex items-center justify-center gap-5">
+            <a
+              href="https://github.com/nickzmoro/Marcas-do-Andr-"
+              target="_blank"
+            >
+              <FaGithub
+                size={35}
+                className="hover:fill-[#d3d6fd] transition-all"
+              />
+            </a>
+            <a href="https://marcasdoandre.netlify.app/" target="_blank">
+              <HiLink
+                size={35}
+                className="hover:fill-[#d3d6fd] transition-all"
+              />
+            </a>
+          </div>
         </div>
         <div className="content-container">
           <div className="project-info-container">
@@ -168,6 +252,26 @@ const Projects = () => {
       <SwiperSlide className="carousel-container">
         <div className="container-img">
           <img src={ConversorDeMoedas} alt="" className="img" loading="lazy" />
+          <div className="absolute top-0 left-0 w-full h-full bg-[#10122996] opacity-0 hover:opacity-100 transition-all flex items-center justify-center gap-5">
+            <a
+              href="https://github.com/nickzmoro/conversor-de-moedas"
+              target="_blank"
+            >
+              <FaGithub
+                size={35}
+                className="hover:fill-[#d3d6fd] transition-all"
+              />
+            </a>
+            <a
+              href="https://conversordemoedas-nicolas.netlify.app/"
+              target="_blank"
+            >
+              <HiLink
+                size={35}
+                className="hover:fill-[#d3d6fd] transition-all"
+              />
+            </a>
+          </div>
         </div>
         <div className="content-container">
           <div className="project-info-container">
