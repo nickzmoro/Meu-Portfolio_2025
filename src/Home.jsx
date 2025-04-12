@@ -296,14 +296,14 @@ function Home() {
               <h2 className="subtitle">Minha Trajetória</h2>
               <div className="line-divisor-content mt-2"></div>
             </div>
-            <div className="exp-cards flex items-end gap-10">
+            <div className="exp-cards flex items-end gap-10 mt-5">
               <CardXp
                 date="2023"
                 title="Primeiro contato com a programação"
-                description="Lorem ipsum habit app usp imup async await function year love lorem ipsum"
+                description="Descobri a programação e me apaixonei por criar interfaces que geram valor e experiências únicas."
                 className="translate-y-5"
               />
-              <div className="timeline flex flex-col items-center mb-3">
+              <div className="timeline flex flex-col items-center mb-10">
                 <div className="line-smaller w-[1px] h-[60px] bg-white"></div>
                 <div className="ball w-[25px] h-[25px] border border-white rounded-full hover:bg-[#404cd175] transition-all ease-in-out duration-200"></div>
                 <div className="line-bigger w-[1px] h-[120px] bg-white"></div>
@@ -313,7 +313,7 @@ function Home() {
               <CardXp
                 date="2024 - Atual"
                 title="Desenvolvedor Front-End Freelancer"
-                description="Lorem ipsum habit app usp imup async await function year love lorem ipsum"
+                description="Crio interfaces modernas, responsivas e focadas na experiência do usuário. Atuo em projetos para empresas ou pessoais, sempre com o objetivo de agregar valor real aos seus resultados por meio de soluções digitais eficientes."
                 technologies={[
                   { name: "HTML5", img: "/assets/html.png" },
                   { name: "CSS3", img: "/assets/css.png" },
