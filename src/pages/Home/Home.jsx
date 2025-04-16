@@ -7,21 +7,21 @@ import { HiOutlineDownload } from "react-icons/hi";
 import { MdOutlineArrowOutward } from "react-icons/md";
 
 // arquivos
-import Header from "./components/header/header";
-import Footer from "./components/footer/footer";
-import ProgressBarSkills from "./components/progressBarSkills/skills";
+import Header from "../../components/header/header";
+import Footer from "../../components/footer/footer";
+import ProgressBarSkills from "../../components/progressBarSkills/skills";
 import "./Home.css";
-import MeuCurriculo from "./assets/Meu-curriculo.pdf";
-import CardXp from "./components/card/cardXp";
-import FormContact from "./components/form/form";
-import ProjectsCard from "./components/projectCard/projectCard";
+import MeuCurriculo from "../../assets/Meu-curriculo.pdf";
+import CardXp from "../../components/card/cardXp";
+import FormContact from "../../components/form/form";
+import ProjectsCard from "../../components/projectCard/projectCard";
 
 // images
-import programmer from "./assets/images/emoji-programmer.png";
-import spotlight from "./assets/images/spotlight.png";
-import bgHome from "./assets/images/background-home.png";
-import me from "./assets/images/me.png";
-import gitHubLogo from "./assets/images/github-svg.svg";
+import programmer from "../../assets/images/emoji-programmer.png";
+import spotlight from "../../assets/images/spotlight.png";
+import bgHome from "../../assets/images/background-home.png";
+import me from "../../assets/images/me.png";
+import gitHubLogo from "../../assets/images/github-svg.svg";
 
 function Home() {
   return (
