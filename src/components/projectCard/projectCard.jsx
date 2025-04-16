@@ -12,7 +12,6 @@ import MeuPortfolio from "../../assets/images/projects/portfolio.png";
 import MarcasDoAndre from "../../assets/images/projects/marcas-do-andre.png";
 import ConversorDeMoedas from "../../assets/images/projects/conversor-moedas.png";
 import ToDoList from "../../assets/images/projects/to-do-list-react.png";
-import Tech from "../techs/tech.jsx";
 import Slide from "../projectSlide/projectSlide.jsx";
 
 const Projects = () => {
@@ -71,10 +70,6 @@ const Projects = () => {
             {
               name: "HTML5",
               img: "/assets/html.png",
-            },
-            {
-              name: "CSS3",
-              img: "/assets/css.png",
             },
             {
               name: "JavaScript",
