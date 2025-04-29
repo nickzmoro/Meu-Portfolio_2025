@@ -14,7 +14,7 @@ const Slide = ({
   tech,
 }) => {
   return (
-    <div className="carousel-container">
+    <div className="carousel-container w-full max-sm:h-auto md:h-[650px]">
       <div className="container-img">
         <img src={img} alt={nameProject} className="img" loading="lazy" />
         <div className="absolute top-0 left-0 w-full h-full bg-[#10122996] opacity-0 hover:opacity-100 transition-all flex items-center justify-center gap-5">

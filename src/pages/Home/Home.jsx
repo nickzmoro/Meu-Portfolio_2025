@@ -273,7 +273,7 @@ function Home() {
           className="projects w-screen h-screen flex justify-center items-center"
           id="projetos"
         >
-          <div className="projects-container w-[80%] h-[90%] flex flex-col justify-evenly gap-2">
+          <div className="projects-container w-[80%] h-[90%] flex flex-col justify-evenly gap-[50px]">
             <div className="projects-title flex flex-col justify-center items-center gap-2">
               <h3 className="section-name">Projetos</h3>
               <h2 className="subtitle">Meus Projetos</h2>

@@ -20,7 +20,26 @@ const Projects = () => {
       slidesPerView={4}
       spaceBetween={25}
       grabCursor={false}
+      style={{ height: "auto" }}
       className="mySwiper w-[100%] h-auto -z-10"
+      breakpoints={{
+        0: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 2,
+          spaceBetween: 15,
+        },
+        1420: {
+          slidesPerView: 3,
+          spaceBetween: 20,
+        },
+        1536: {
+          slidesPerView: 4,
+          spaceBetween: 25,
+        },
+      }}
     >
       <SwiperSlide>
         <Slide
@@ -31,7 +50,7 @@ const Projects = () => {
           }
           type={"E-COMMERCE - Freelance"}
           linkGithub={"https://github.com/nickzmoro/Maq-Soft"}
-          linkDeploy={"https://maq-soft.vercel.app/"}
+          linkDeploy={"https://maqsoft-sorvetes.com.br"}
           tech={[
             {
               name: "HTML5",
