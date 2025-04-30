@@ -47,13 +47,13 @@ function Home() {
               className="w-screen h-screen object-cover z-[-1] pointer-events-none select-none bg-[linear-gradient(to_bottom,#0000006e_0%,#000319_100%)]"
             />
           </div>
-          <div className="home-container w-[80%] h-[90%] flex justify-between items-center z-10 px-5">
+          <div className="home-container w-[80%] h-[90%] flex justify-between items-center z-10 px-5 max-md:flex-col max-md:gap-8">
             <div className="introduction-txt">
               <div className="section-name flex items-center gap-4 mb-5">
                 <div className="line-title w-[100px] h-[1px] bg-[#404CD1]"></div>
                 <h3 className="section-name">Introdução</h3>
               </div>
-              <h1 className="uppercase font-bold text-[4.5rem]/[1.1]">
+              <h1 className="uppercase font-bold text-[4.5rem]/[1.1] max-sm:text-[4rem]">
                 Nicolas <br />
                 Moro
               </h1>
@@ -67,7 +67,7 @@ function Home() {
               </p>
             </div>
             <div className="my-socials flex item-center gap-10">
-              <div className="image-programmer">
+              <div className="image-programmer max-lg:hidden">
                 <img
                   src={programmer}
                   alt="Programmer"
@@ -75,8 +75,8 @@ function Home() {
                   className="drop-shadow-[0_4px_50px_#404cd139] select-none"
                 />
               </div>
-              <div className="socials-media flex flex-col gap-2 items-center justify-center">
-                <div className="line-socials w-[1px] h-[100px] bg-[#404CD1]"></div>
+              <div className="socials-media flex flex-col gap-2 items-center justify-center max-md:flex-row">
+                <div className="line-socials w-[1px] h-[100px] bg-[#404CD1] max-md:w-[80px] max-md:h-[1px]"></div>
                 <a
                   href="https://www.linkedin.com/in/devnicolas"
                   target="_blank"
@@ -98,7 +98,7 @@ function Home() {
                 >
                   <FaInstagram size={18} />
                 </a>
-                <div className="line-socials w-[1px] h-[100px] bg-[#404CD1]"></div>
+                <div className="line-socials w-[1px] h-[100px] bg-[#404CD1] max-md:w-[80px] max-md:h-[1px]"></div>
               </div>
             </div>
           </div>
@@ -110,7 +110,7 @@ function Home() {
           id="sobre-mim"
         >
           <div className="about-container w-[80%] h-[53%] flex justify-center items-center px-5 max-sm:w-[95%]">
-            <div className="card-about h-full flex max-xl:flex-col items-start gap-8 px-8 py-8 border-[1px] border-[#ffffff15] bg-[linear-gradient(to_right,#04071D_0%,#0C0E23_100%)] rounded-[20px]">
+            <div className="card-about h-full flex max-xl:flex-col items-start gap-8 px-8 py-8 max-sm:p-6 border-[1px] border-[#ffffff15] bg-[linear-gradient(to_right,#04071D_0%,#0C0E23_100%)] rounded-[20px]">
               <div className="my-image max-xl:w-full">
                 <img
                   src={me}
