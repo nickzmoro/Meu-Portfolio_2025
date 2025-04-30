@@ -32,7 +32,7 @@ function Home() {
       {/* Main */}
       <main>
         {/* Home */}
-        <section className="home w-screen h-screen relative flex justify-center items-center">
+        <section className="home w-screen min-h-screen relative flex justify-center items-center">
           <div className="spotlight absolute top-0 left-[-150px] opacity-50 pointer-events-none select-none">
             <img src={spotlight} alt="Spotlight" loading="lazy" />
           </div>
@@ -106,19 +106,24 @@ function Home() {
 
         {/* About */}
         <section
-          className="about w-screen h-screen flex justify-center items-center"
+          className="about w-screen min-h-screen flex justify-center items-center"
           id="sobre-mim"
         >
-          <div className="about-container w-[80%] h-[53%] flex justify-center items-center px-5">
-            <div className="card-about h-full flex items-start gap-8 px-8 py-8 border-[1px] border-[#ffffff15] bg-[linear-gradient(to_right,#04071D_0%,#0C0E23_100%)] rounded-[20px]">
-              <div className="my-image">
-                <img src={me} alt="Me" loading="lazy" />
+          <div className="about-container w-[80%] h-[53%] flex justify-center items-center px-5 max-sm:w-[95%]">
+            <div className="card-about h-full flex max-xl:flex-col items-start gap-8 px-8 py-8 border-[1px] border-[#ffffff15] bg-[linear-gradient(to_right,#04071D_0%,#0C0E23_100%)] rounded-[20px]">
+              <div className="my-image max-xl:w-full">
+                <img
+                  src={me}
+                  alt="Me"
+                  loading="lazy"
+                  className="max-xl:object-cover max-xl:w-full max-xl:h-[300px] rounded-[12px] max-sm:h-[150px]"
+                />
               </div>
-              <div className="about-description h-full flex flex-col justify-between">
+              <div className="about-description h-full w-full flex flex-col justify-between">
                 <div>
                   <h3 className="section-name">Sobre mim</h3>
                   <h2 className="subtitle">Quem eu sou?</h2>
-                  <div className="line-divisor-content mt-2.5 mb-3"></div>
+                  <div className="line-divisor-content mt-2.5 mb-5"></div>
                   <p className="about-description-p mb-1.5">
                     Sou um desenvolvedor front-end de 16 anos, focado em criar
                     interfaces modernas e responsivas. Trabalho em projetos
@@ -170,7 +175,7 @@ function Home() {
 
         {/* Skills */}
         <section
-          className="skills relative w-screen h-screen flex justify-center items-center"
+          className="skills relative w-screen min-h-screen flex justify-center items-center"
           id="habilidades"
         >
           <div className="skills-container w-[80%] h-[90%] flex flex-col justify-center items-center gap-10">
@@ -180,7 +185,7 @@ function Home() {
               <div className="line-divisor-content mt-2"></div>
             </div>
             <div className="skills-container">
-              <div className="skills-grid flex justify-between gap-40">
+              <div className="skills-grid flex justify-between gap-40 max-xl:flex-col max-xl:gap-4">
                 <div className="flex flex-col gap-4">
                   <ProgressBarSkills
                     children={"HTML5"}
@@ -227,7 +232,7 @@ function Home() {
                     />
                   </div>
 
-                  <div className="flex flex-col gap-2">
+                  <div className="flex flex-col gap-2 mt-4">
                     <p className="font-semibold text-[1.1rem]">Ferramentas:</p>
                     <div className="flex gap-1">
                       <div className="svg-box">
@@ -270,7 +275,7 @@ function Home() {
 
         {/* Projects */}
         <section
-          className="projects w-screen h-screen flex justify-center items-center"
+          className="projects w-screen min-h-screen flex justify-center items-center"
           id="projetos"
         >
           <div className="projects-container w-[80%] h-[90%] flex flex-col justify-evenly gap-[50px]">
@@ -287,7 +292,7 @@ function Home() {
 
         {/* Experience */}
         <section
-          className="experience w-screen h-screen flex justify-center items-center"
+          className="experience w-screen min-h-screen flex justify-center items-center"
           id="experiência"
         >
           <div className="experience-content w-[80%] h-[60%] flex flex-col items-center justify-evenly gap-5">
@@ -296,14 +301,14 @@ function Home() {
               <h2 className="subtitle">Minha Trajetória</h2>
               <div className="line-divisor-content mt-2"></div>
             </div>
-            <div className="exp-cards flex items-end gap-10 mt-5">
+            <div className="exp-cards flex items-end gap-10 mt-5 max-lg:flex-col max-lg:gap-3 max-lg:items-center relative">
               <CardXp
                 date="2023"
                 title="Primeiro contato com a programação"
                 description="Descobri a programação e me apaixonei por criar interfaces que geram valor e experiências únicas."
                 className="translate-y-5"
               />
-              <div className="timeline flex flex-col items-center mb-10">
+              <div className="timeline flex flex-col items-center mb-10 max-lg:mb-0 max-lg:absolute max-lg:top-[100px] max-lg:right-[-35px]">
                 <div className="line-smaller w-[1px] h-[60px] bg-white"></div>
                 <div className="ball w-[25px] h-[25px] border border-white rounded-full hover:bg-[#404cd175] transition-all ease-in-out duration-200"></div>
                 <div className="line-bigger w-[1px] h-[120px] bg-white"></div>

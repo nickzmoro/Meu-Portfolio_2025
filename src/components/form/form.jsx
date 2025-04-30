@@ -99,14 +99,14 @@ const Form = () => {
 
   return (
     <section
-      className="w-screen h-screen flex items-center justify-center"
+      className="w-screen min-h-screen flex items-center justify-center"
       id="contato"
     >
       <div className="w-[80%] h-[70%] bg-[#0C0E23] border border-[#ffffff15] rounded-xl overflow-hidden">
         <div className="flex justify-between items-start">
-          <div className="px-[60px] py-[50px] flex flex-col gap-5">
+          <div className="px-[60px] py-[50px] max-md:p-7 flex flex-col gap-5">
             <div>
-              <h3 className="subtitle mb-2">
+              <h3 className="subtitle mb-2 max-md:mb-4">
                 <span className="text-[#5564FF]">&lt;</span>Entre em contato
                 <span className="text-[#5564FF]">&#47;&gt;</span>
               </h3>
@@ -184,12 +184,12 @@ const Form = () => {
               {showNotification && renderStatus()}
             </form>
           </div>
-          <div className="w-[40%] relative">
+          <div className="w-[40%] relative max-md:hidden">
             <div className="gradient-img absolute w-full h-full bg-[linear-gradient(to_right,#0C0E23_10%,#0c0e2350_100%)]"></div>
             <img
               src={bgForm}
               alt="background-form-coding"
-              className="w-full h-full object-cover"
+              className="w-[650px] h-[650px] object-cover"
             />
           </div>
         </div>
