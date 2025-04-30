@@ -104,7 +104,7 @@ const Form = () => {
     >
       <div className="w-[80%] h-[70%] bg-[#0C0E23] border border-[#ffffff15] rounded-xl overflow-hidden">
         <div className="flex justify-between items-start">
-          <div className="px-[60px] py-[50px] max-md:p-7 flex flex-col gap-5">
+          <div className="px-[60px] py-[50px] max-md:p-7 flex flex-col gap-5 overflow-hidden">
             <div>
               <h3 className="subtitle mb-2 max-md:mb-4">
                 <span className="text-[#5564FF]">&lt;</span>Entre em contato
