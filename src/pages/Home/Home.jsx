@@ -106,7 +106,7 @@ function Home() {
 
         {/* About */}
         <section
-          className="about w-screen min-h-screen flex justify-center items-center"
+          className="about w-screen min-h-screen flex justify-center items-center max-sm:py-[100px]"
           id="sobre-mim"
         >
           <div className="about-container w-[80%] h-[53%] flex justify-center items-center px-5 max-sm:w-[95%]">
@@ -175,10 +175,10 @@ function Home() {
 
         {/* Skills */}
         <section
-          className="skills relative w-screen min-h-screen flex justify-center items-center"
+          className="skills relative w-screen min-h-screen flex justify-center items-center max-sm:py-[100px]"
           id="habilidades"
         >
-          <div className="skills-container w-[80%] h-[90%] flex flex-col justify-center items-center gap-10">
+          <div className="skills-container w-[80%] h-[90%] flex flex-col justify-center items-center gap-10 max-sm:w-[90%]">
             <div className="section-title-container flex flex-col gap-2 items-center">
               <h3 className="section-name">Tecnologias</h3>
               <h2 className="subtitle">Minhas Habilidades</h2>
@@ -275,10 +275,10 @@ function Home() {
 
         {/* Projects */}
         <section
-          className="projects w-screen min-h-screen flex justify-center items-center"
+          className="projects w-screen min-h-screen flex justify-center items-center max-sm:py-[100px]"
           id="projetos"
         >
-          <div className="projects-container w-[80%] h-[90%] flex flex-col justify-evenly gap-[50px]">
+          <div className="projects-container w-[80%] h-[90%] flex flex-col justify-evenly gap-[50px] max-sm:w-[90%]">
             <div className="projects-title flex flex-col justify-center items-center gap-2">
               <h3 className="section-name">Projetos</h3>
               <h2 className="subtitle">Meus Projetos</h2>
@@ -292,10 +292,10 @@ function Home() {
 
         {/* Experience */}
         <section
-          className="experience w-screen min-h-screen flex justify-center items-center"
+          className="experience w-screen min-h-screen flex justify-center items-center max-sm:py-[50px]"
           id="experiência"
         >
-          <div className="experience-content w-[80%] h-[60%] flex flex-col items-center justify-evenly gap-5">
+          <div className="experience-content w-[80%] h-[60%] flex flex-col items-center justify-evenly gap-5 max-sm:w-[90%]">
             <div className="exp-title flex flex-col justify-center items-center gap-2">
               <h3 className="section-name">Experiência</h3>
               <h2 className="subtitle">Minha Trajetória</h2>
@@ -308,12 +308,12 @@ function Home() {
                 description="Descobri a programação e me apaixonei por criar interfaces que geram valor e experiências únicas."
                 className="translate-y-5"
               />
-              <div className="timeline flex flex-col items-center mb-10 max-lg:mb-0 max-lg:absolute max-lg:top-[100px] max-lg:right-[-35px]">
-                <div className="line-smaller w-[1px] h-[60px] bg-white"></div>
-                <div className="ball w-[25px] h-[25px] border border-white rounded-full hover:bg-[#404cd175] transition-all ease-in-out duration-200"></div>
-                <div className="line-bigger w-[1px] h-[120px] bg-white"></div>
-                <div className="ball w-[25px] h-[25px] border border-white rounded-full hover:bg-[#404cd175] transition-all ease-in-out duration-200"></div>
-                <div className="line-smaller w-[1px] h-[60px] bg-white"></div>
+              <div className="timeline flex flex-col items-center mb-10 max-lg:mb-0">
+                <div className="line-smaller w-[1px] h-[60px] bg-white max-lg:h-[25px] max-lg:bg-[#ffffff65]"></div>
+                <div className="ball w-[25px] h-[25px] border border-white rounded-full hover:bg-[#404cd175] transition-all ease-in-out duration-200 max-lg:hidden"></div>
+                <div className="line-bigger w-[1px] h-[120px] bg-white max-lg:hidden"></div>
+                <div className="ball w-[25px] h-[25px] border border-white rounded-full hover:bg-[#404cd175] transition-all ease-in-out duration-200 max-lg:hidden"></div>
+                <div className="line-smaller w-[1px] h-[60px] bg-white max-lg:hidden"></div>
               </div>
               <CardXp
                 date="2024 - Atual"

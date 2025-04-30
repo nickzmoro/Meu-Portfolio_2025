@@ -2,19 +2,21 @@ import { FaArrowUp } from "react-icons/fa";
 import "./footer.css";
 
 const Footer = () => {
+  const currentYear = new Date().getFullYear();
+
   return (
     <>
       <footer className="w-screen h-auto flex items-center justify-center border-t border-[#ffffff17] bg-[#000315]">
         <div className="footer-container w-[80%] h-full py-10 flex flex-col gap-6">
-          <div className="flex justify-between">
+          <div className="flex justify-between max-lg:flex-col">
             <div>
               <h3 href="#" className="text-3xl font-[700] uppercase mb-1">
                 Nicolas<span className="text-[#404CD1]">M.</span>
               </h3>
               <p>nicolasmororuiz@gmail.com</p>
-              <p className="text-[#ccc]">(14) 99123-4567</p>
+              <p className="text-[#ccc]">(14) 99666-1883</p>
             </div>
-            <div className="flex gap-[70px]">
+            <div className="flex flex-wrap gap-[70px] max-xl:gap-[25px] max-lg:mt-6">
               <div className="nav-container">
                 <p className="mb-1">Início</p>
                 <a href="#" className="nav-link">
@@ -55,7 +57,7 @@ const Footer = () => {
           </div>
           <div className="pt-6 border-t border-[#ffffff17] flex justify-between items-center">
             <p className="text-[#eee]">
-              Copyright &copy; 2025 | Todos os direitos reservados.
+              Copyright &copy; {currentYear} | Todos os direitos reservados.
             </p>
             <a
               href="#"
