@@ -11,22 +11,22 @@ body {
 
 html,
 label {
-  cursor: url("./cursors/cursor-default.png"), auto;
+  cursor: url("/cursors/cursor-default.png"), auto;
 }
 
 a,
 button {
-  cursor: url("./cursors/cursor-pointer-2.png"), auto;
+  cursor: url("/cursors/cursor-pointer-2.png"), auto;
 }
 
 p,
 input,
 textarea {
-  cursor: url("./cursors/cursor-text.png"), auto;
+  cursor: url("/cursors/cursor-text.png"), auto;
 }
 
 .techs {
-  cursor: url("./cursors/cursor-default.png"), auto;
+  cursor: url("/cursors/cursor-default.png"), auto;
 }
 
 body {
