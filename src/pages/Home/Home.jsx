@@ -22,10 +22,13 @@ import spotlight from "../../assets/images/spotlight.png";
 import bgHome from "../../assets/images/background-home.png";
 import me from "../../assets/images/me.png";
 import gitHubLogo from "../../assets/images/github-svg.svg";
+import SplashScreen from "../../components/splashScreen/SplashScreen";
 
 function Home() {
   return (
     <>
+      <SplashScreen />
+
       {/* Header */}
       <Header />
 
@@ -109,7 +112,7 @@ function Home() {
           className="about w-screen min-h-screen flex justify-center items-center max-sm:py-[100px]"
           id="sobre-mim"
         >
-          <div className="about-container w-[80%] h-[53%] flex justify-center items-center px-5 max-sm:w-[95%]">
+          <div className="about-container w-[80%] h-[53%] flex justify-center items-center px-5 max-sm:w-[98%]">
             <div className="card-about h-full flex max-xl:flex-col items-start gap-8 px-8 py-8 max-sm:p-6 border-[1px] border-[#ffffff15] bg-[linear-gradient(to_right,#04071D_0%,#0C0E23_100%)] rounded-[20px]">
               <div className="my-image max-xl:w-full">
                 <img
@@ -194,12 +197,12 @@ function Home() {
                   />
                   <ProgressBarSkills
                     children={"CSS3"}
-                    sizeProgressBar={"450px"}
+                    sizeProgressBar={"500px"}
                     colorTechnology={"bg-[#0089CA]"}
                   />
                   <ProgressBarSkills
                     children={"JavaScript"}
-                    sizeProgressBar={"450px"}
+                    sizeProgressBar={"475px"}
                     colorTechnology={"bg-[#F0DB4F]"}
                   />
                   <ProgressBarSkills
@@ -209,7 +212,7 @@ function Home() {
                   />
                   <ProgressBarSkills
                     children={"React.JS"}
-                    sizeProgressBar={"400px"}
+                    sizeProgressBar={"450px"}
                     colorTechnology={"bg-[#57BDD9]"}
                   />
                 </div>
@@ -222,12 +225,12 @@ function Home() {
                     />
                     <ProgressBarSkills
                       children={"Bootstrap"}
-                      sizeProgressBar={"400px"}
+                      sizeProgressBar={"350px"}
                       colorTechnology={"bg-[#7311F6]"}
                     />
                     <ProgressBarSkills
                       children={"TailwindCSS"}
-                      sizeProgressBar={"450px"}
+                      sizeProgressBar={"460px"}
                       colorTechnology={"bg-[#38BDF8]"}
                     />
                   </div>
