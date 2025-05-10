@@ -1,4 +1,8 @@
+import { useTranslation } from "react-i18next";
+
 const CardXp = ({ date, title, description, technologies }) => {
+  const { t } = useTranslation();
+
   return (
     <>
       <div className="card-container px-7 py-7 bg-[#ffffff1e] rounded-xl border border-[#ffffff17] h-[fit-content]">
@@ -13,7 +17,7 @@ const CardXp = ({ date, title, description, technologies }) => {
           <>
             <div className="w-[100%] h-[1px] bg-[#ffffff1e] my-3"></div>
             <div>
-              <h4 className="font-[500] mb-3">Principais tecnologias:</h4>
+              <h4 className="font-[500] mb-3">{t("experience.techs")}</h4>
               <div className="technologies-container flex flex-wrap gap-[5px] max-w-[350px]">
                 {technologies.map((item, index) => (
                   <div

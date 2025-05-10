@@ -1,7 +1,10 @@
 import { FaArrowUp } from "react-icons/fa";
 import "./footer.css";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
+
   const currentYear = new Date().getFullYear();
 
   return (
@@ -18,46 +21,46 @@ const Footer = () => {
             </div>
             <div className="flex flex-wrap gap-[70px] max-xl:gap-[25px] max-lg:mt-6">
               <div className="nav-container">
-                <p className="mb-1">Início</p>
+                <p className="mb-1">{t("footer.start.title")}</p>
                 <a href="#" className="nav-link">
-                  Voltar ao topo
+                  {t("footer.start.returnToTop-link")}
                 </a>
               </div>
               <div className="nav-container">
-                <p className="mb-1">Sobre</p>
+                <p className="mb-1">{t("footer.about.title")}</p>
                 <a href="#sobre-mim" className="nav-link">
-                  Sobre mim
+                  {t("footer.about.aboutMe-link")}
                 </a>
                 <a href="#sobre-mim" className="nav-link">
-                  Currículo
+                  {t("footer.about.cv-link")}
                 </a>
               </div>
               <div className="nav-container">
-                <p className="mb-1">Habilidades</p>
+                <p className="mb-1">{t("footer.abilities.title")}</p>
                 <a href="#habilidades" className="nav-link">
-                  Tecnologias
+                  {t("footer.abilities.tech-link")}
                 </a>
                 <a href="#habilidades" className="nav-link">
-                  Ferramentas
+                  {t("footer.abilities.tool-link")}
                 </a>
               </div>
               <div className="nav-container">
-                <p className="mb-1">Projetos</p>
+                <p className="mb-1">{t("footer.projects.title")}</p>
                 <a href="#projetos" className="nav-link">
-                  Ver projetos
+                  {t("footer.projects.projects-link")}
                 </a>
               </div>
               <div className="nav-container">
-                <p className="mb-1">Experiências</p>
+                <p className="mb-1">{t("footer.experience.title")}</p>
                 <a href="#experiência" className="nav-link">
-                  Minha jornada
+                  {t("footer.experience.xp-link")}
                 </a>
               </div>
             </div>
           </div>
           <div className="pt-6 border-t border-[#ffffff17] flex justify-between items-center">
             <p className="text-[#eee]">
-              Copyright &copy; {currentYear} | Todos os direitos reservados.
+              Copyright &copy; {currentYear} | {t("footer.copyright")}
             </p>
             <a
               href="#"

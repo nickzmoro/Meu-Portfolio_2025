@@ -3,6 +3,7 @@ import { HiLink } from "react-icons/hi";
 import Tech from "../techs/tech.jsx";
 
 import "./projectSlide.css";
+import { useTranslation } from "react-i18next";
 
 const Slide = ({
   img,
@@ -13,6 +14,8 @@ const Slide = ({
   description,
   tech,
 }) => {
+  const { t } = useTranslation();
+
   return (
     <div className="carousel-container w-full max-sm:h-auto md:h-[650px]">
       <div className="container-img">
@@ -36,7 +39,9 @@ const Slide = ({
           <p className="text-[0.95rem] text-[#ccc] mt-2">{description}</p>
         </div>
         <div className="mt-3">
-          <p className="font-[500] text-[1rem]">Tecnologias utilizadas</p>
+          <p className="font-[500] text-[1rem]">
+            {t("projects.techs-subtitle")}
+          </p>
           {tech && tech.length > 0 && (
             <div className="tech-container">
               {tech.map((tech, index) => (

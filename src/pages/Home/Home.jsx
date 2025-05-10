@@ -15,6 +15,7 @@ import MeuCurriculo from "../../assets/Meu-curriculo.pdf";
 import CardXp from "../../components/card/cardXp";
 import FormContact from "../../components/form/form";
 import ProjectsCard from "../../components/projectCard/projectCard";
+import { useTranslation } from "react-i18next";
 
 // images
 import programmer from "../../assets/images/emoji-programmer.png";
@@ -25,6 +26,8 @@ import gitHubLogo from "../../assets/images/github-svg.svg";
 import SplashScreen from "../../components/splashScreen/SplashScreen";
 
 function Home() {
+  const { t } = useTranslation();
+
   return (
     <>
       <SplashScreen />
@@ -54,19 +57,17 @@ function Home() {
             <div className="introduction-txt">
               <div className="section-name flex items-center gap-4 mb-5">
                 <div className="line-title w-[100px] h-[1px] bg-[#404CD1]"></div>
-                <h3 className="section-name">Introdução</h3>
+                <h3 className="section-name">{t("home.subtitle")}</h3>
               </div>
               <h1 className="uppercase font-bold text-[4.5rem]/[1.1] max-sm:text-[4rem]">
                 Nicolas <br />
                 Moro
               </h1>
               <h2 className="uppercase font-semibold text-[1.2rem] text-[#404CD1] mt-2">
-                Desenvolvedor Front-End
+                {t("home.stack")}
               </h2>
               <p className="text-[#ccc] max-w-[500px] mt-3 border-l-2 border-[#404CD1] pl-4">
-                Desenvolvedor web apaixonado por criar experiências incríveis,
-                com habilidades em HTML, CSS, JavaScript e React, sempre
-                buscando aprimoramento e inovação.
+                {t("home.description")}
               </p>
             </div>
             <div className="my-socials flex item-center gap-10">
@@ -124,24 +125,17 @@ function Home() {
               </div>
               <div className="about-description h-full w-full flex flex-col justify-between">
                 <div>
-                  <h3 className="section-name">Sobre mim</h3>
-                  <h2 className="subtitle">Quem eu sou?</h2>
+                  <h3 className="section-name">{t("aboutMe.subtitle")}</h3>
+                  <h2 className="subtitle">{t("aboutMe.title")}</h2>
                   <div className="line-divisor-content mt-2.5 mb-5"></div>
                   <p className="about-description-p mb-1.5">
-                    Sou um desenvolvedor front-end de 16 anos, focado em criar
-                    interfaces modernas e responsivas. Trabalho em projetos
-                    próprios e freelances, utilizando HTML, CSS, JavaScript,
-                    além de Git, GitHub e TailwindCSS.
+                    {t("aboutMe.paragraph-top")}
                   </p>
                   <p className="about-description-p mb-1.5">
-                    Proativo, comunicativo e adaptável, valorizo o trabalho em
-                    equipe e a busca por soluções criativas. Minha missão é
-                    transformar ideias em projetos tecnológicos que entreguem
-                    impacto e qualidade.
+                    {t("aboutMe.paragraph-mid")}
                   </p>
                   <p className="about-description-p">
-                    Estou sempre aprendendo e evoluindo para criar experiências
-                    digitais eficientes e inovadoras.
+                    {t("aboutMe.paragraph-bottom")}
                   </p>
                 </div>
                 <div>
@@ -152,7 +146,7 @@ function Home() {
                       className="flex items-center mr-3 px-4 py-2 border-[1px] border-[#ffffff4b] rounded-[15px] hover:bg-[#111330] hover:transition ease-in-out duration-200"
                       download="Meu-curriculo.pdf"
                     >
-                      Baixar CV
+                      {t("header.downloadCv")}
                       <HiOutlineDownload
                         className="ml-[2px] flex stroke-[#fff]"
                         size={18}
@@ -163,7 +157,7 @@ function Home() {
                       target="_blank"
                       className="group flex items-center gap-[2px] h-[35px] border-l-[1px] pl-3 border-l-[#cccccc7e] text-[#ccc] hover:text-[#fff] hover:transition ease-in-out duration-200"
                     >
-                      Veja mais
+                      {t("aboutMe.seeMore")}
                       <MdOutlineArrowOutward
                         size={20}
                         className="fill-[#ccc] group-hover:fill-[#fff] transition ease-in-out duration-200"
@@ -183,8 +177,8 @@ function Home() {
         >
           <div className="skills-container w-[80%] h-[90%] flex flex-col justify-center items-center gap-10 max-sm:w-[90%]">
             <div className="section-title-container flex flex-col gap-2 items-center">
-              <h3 className="section-name">Tecnologias</h3>
-              <h2 className="subtitle">Minhas Habilidades</h2>
+              <h3 className="section-name">{t("techs.subtitle")}</h3>
+              <h2 className="subtitle">{t("techs.title")}</h2>
               <div className="line-divisor-content mt-2"></div>
             </div>
             <div className="skills-container">
@@ -236,7 +230,9 @@ function Home() {
                   </div>
 
                   <div className="flex flex-col gap-2 mt-4">
-                    <p className="font-semibold text-[1.1rem]">Ferramentas:</p>
+                    <p className="font-semibold text-[1.1rem]">
+                      {t("techs.tools")}
+                    </p>
                     <div className="flex gap-1">
                       <div className="svg-box">
                         <svg
@@ -283,8 +279,8 @@ function Home() {
         >
           <div className="projects-container w-[80%] h-[90%] flex flex-col justify-evenly gap-[50px] max-sm:w-[90%]">
             <div className="projects-title flex flex-col justify-center items-center gap-2">
-              <h3 className="section-name">Projetos</h3>
-              <h2 className="subtitle">Meus Projetos</h2>
+              <h3 className="section-name">{t("projects.subtitle")}</h3>
+              <h2 className="subtitle">{t("projects.title")}</h2>
               <div className="line-divisor-content mt-2"></div>
             </div>
             <div className="projects-carousel z-10">
@@ -307,8 +303,8 @@ function Home() {
             <div className="exp-cards flex items-end gap-10 mt-5 max-lg:flex-col max-lg:gap-3 max-lg:items-center relative">
               <CardXp
                 date="2023"
-                title="Primeiro contato com a programação"
-                description="Descobri a programação e me apaixonei por criar interfaces que geram valor e experiências únicas."
+                title={t("experience.2023-title")}
+                description={t("experience.2023-paragraph")}
                 className="translate-y-5"
               />
               <div className="timeline flex flex-col items-center mb-10 max-lg:mb-0">
@@ -320,8 +316,8 @@ function Home() {
               </div>
               <CardXp
                 date="2024 - Atual"
-                title="Desenvolvedor Front-End Freelancer"
-                description="Crio interfaces modernas, responsivas e focadas na experiência do usuário. Atuo em projetos para empresas ou pessoais, sempre com o objetivo de agregar valor real aos seus resultados por meio de soluções digitais eficientes."
+                title={t("experience.2024-title")}
+                description={t("experience.2024-paragraph")}
                 technologies={[
                   { name: "HTML5", img: "/assets/html.png" },
                   { name: "CSS3", img: "/assets/css.png" },

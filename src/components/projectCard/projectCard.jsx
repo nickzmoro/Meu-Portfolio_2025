@@ -13,8 +13,11 @@ import MarcasDoAndre from "../../assets/images/projects/marcas-do-andre.png";
 import ConversorDeMoedas from "../../assets/images/projects/conversor-moedas.png";
 import ToDoList from "../../assets/images/projects/to-do-list-react.png";
 import Slide from "../projectSlide/projectSlide.jsx";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const { t } = useTranslation();
+
   return (
     <Swiper
       slidesPerView={4}
@@ -45,9 +48,7 @@ const Projects = () => {
         <Slide
           nameProject={"Maq Soft"}
           img={MaqSoft}
-          description={
-            "Site institucional e funcional da sorveteria Maq Soft, com página inicial atrativa e carrinho de compras integrado para facilitar pedidos online."
-          }
+          description={t("projects.description-MaqSoft")}
           type={"E-COMMERCE - Freelance"}
           linkGithub={"https://github.com/nickzmoro/Maq-Soft"}
           linkDeploy={"https://maqsoft-sorvetes.com.br"}
@@ -77,12 +78,10 @@ const Projects = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Slide
-          nameProject={"Meu Portfólio"}
+          nameProject={"Portfólio"}
           img={MeuPortfolio}
-          description={
-            "Portfólio com projetos front-end desenvolvidos com foco em design responsivo, usabilidade e soluções que geram resultados reais para clientes e empresas."
-          }
-          type={"Projeto Pessoal"}
+          description={t("projects.description-Portfolio")}
+          type={t("projects.typeProject")}
           linkGithub={"https://github.com/nickzmoro/Meu-Portfolio_2025"}
           linkDeploy={"#"}
           tech={[
@@ -109,10 +108,8 @@ const Projects = () => {
         <Slide
           nameProject={"To-Do-List"}
           img={ToDoList}
-          description={
-            "To-Do List funcional desenvolvida com React e estilizada com Styled-Components, permitindo organização eficiente de tarefas com uma interface intuitiva e moderna."
-          }
-          type={"Projeto Pessoal"}
+          description={t("projects.description-ToDoList")}
+          type={t("projects.typeProject")}
           linkGithub={"https://github.com/nickzmoro/To-Do-List-ReactJS"}
           linkDeploy={"https://to-do-list-react-js-peach.vercel.app/"}
           tech={[
@@ -143,9 +140,7 @@ const Projects = () => {
         <Slide
           nameProject={"Dolcci'B"}
           img={DolcciB}
-          description={
-            "Site da doceria Dolcci'B com visual delicado, cardápio completo e sistema de carrinho para pedidos online rápidos, intuitivos e personalizados."
-          }
+          description={t("projects.description-DolcciB")}
           type={"E-COMMERCE BÁSICO - Freelance"}
           linkGithub={"https://github.com/nickzmoro/Dolcci-B"}
           linkDeploy={"https://dolccib.netlify.app/"}
@@ -169,9 +164,7 @@ const Projects = () => {
         <Slide
           nameProject={"Marcas do André"}
           img={MarcasDoAndre}
-          description={
-            "Portfólio desenvolvido para um designer, com layout minimalista e funcional, focado em apresentar e vender seus trabalhos com elegância e usabilidade."
-          }
+          description={t("projects.description-MarcasDoAndre")}
           type={"LANDING PAGE - Freelance"}
           linkGithub={"https://github.com/nickzmoro/Marcas-do-Andr-"}
           linkDeploy={"https://marcasdoandre.netlify.app/"}
@@ -195,10 +188,8 @@ const Projects = () => {
         <Slide
           nameProject={"Conversor de Moedas"}
           img={ConversorDeMoedas}
-          description={
-            "Conversor de moedas integrado a uma API, permitindo converter valores em real para diversas moedas de forma prática, precisa e em tempo real."
-          }
-          type={"Projeto Pessoal"}
+          description={t("projects.description-Conversor")}
+          type={t("projects.typeProject")}
           linkGithub={"https://github.com/nickzmoro/conversor-de-moedas"}
           linkDeploy={"https://conversordemoedas-nicolas.netlify.app/"}
           tech={[

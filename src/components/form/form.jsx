@@ -4,8 +4,11 @@ import "./form.css";
 import { ClipLoader } from "react-spinners";
 import { IoClose } from "react-icons/io5";
 import { FaCheck } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
 
 const Form = () => {
+  const { t } = useTranslation();
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
@@ -107,26 +110,27 @@ const Form = () => {
           <div className="px-[60px] py-[50px] max-md:p-7 flex flex-col gap-5 overflow-hidden">
             <div>
               <h3 className="subtitle mb-2 max-md:mb-4">
-                <span className="text-[#5564FF]">&lt;</span>Entre em contato
+                <span className="text-[#5564FF]">&lt;</span>
+                {t("form.title")}
                 <span className="text-[#5564FF]">&#47;&gt;</span>
               </h3>
               <p className="text-[#ccc] text-[0.95rem]">
-                Fico à disposição para conversarmos sobre projetos, ideias ou
-                parcerias. <br /> Preencha o formulário abaixo e retornarei o
-                mais breve possível.
+                {t("form.description-top")} <br />{" "}
+                {t("form.description-bottom")}
               </p>
             </div>
             <form onSubmit={(e) => onSubmit(e)} className="flex flex-col gap-3">
               <div className="form-block">
                 <label htmlFor="name" className="text-[#ffffffe5]">
-                  Seu nome<span className="asterisk">*</span>
+                  {t("form.name-label")}
+                  <span className="asterisk">*</span>
                 </label>
                 <input
                   type="text"
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   id="name"
-                  placeholder="Digite o seu nome"
+                  placeholder={t("form.name-placeholder")}
                   required
                   className="form-input"
                 />
@@ -134,14 +138,15 @@ const Form = () => {
 
               <div className="form-block">
                 <label htmlFor="email">
-                  Seu e-mail<span className="asterisk">*</span>
+                  {t("form.email-label")}
+                  <span className="asterisk">*</span>
                 </label>
                 <input
                   type="email"
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   id="email"
-                  placeholder="exemplo@gmail.com"
+                  placeholder={t("form.email-placeholder")}
                   required
                   className="form-input"
                 />
@@ -149,13 +154,14 @@ const Form = () => {
 
               <div className="form-block">
                 <label htmlFor="message">
-                  Mensagem<span className="asterisk">*</span>
+                  {t("form.msg-label")}
+                  <span className="asterisk">*</span>
                 </label>
                 <textarea
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
                   id="message"
-                  placeholder="Digite a sua mensagem"
+                  placeholder={t("form.msg-placeholder")}
                   required
                   className="form-input resize-none"
                 ></textarea>
@@ -176,7 +182,7 @@ const Form = () => {
                     className="group min-w-full h-[45px] bg-[#5564FF] rounded-[6px] mt-3 font-[500] flex items-center justify-center hover:bg-[#5563ffdc] transition-all ease-in-out duration-200"
                     disabled={loading}
                   >
-                    <>Enviar</>
+                    <>{t("form.btnSubmit")}</>
                   </button>
                 )}
               </div>
