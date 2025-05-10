@@ -1,0 +1,98 @@
+{
+  "header": {
+    "aboutMe": "About Me",
+    "abilities": "Skills",
+    "projects": "Projects",
+    "experiences": "Experiences",
+    "contact": "Contact",
+    "downloadCv": "Download CV"
+  },
+
+  "home": {
+    "subtitle": "Introduction",
+    "stack": "Front-End Developer",
+    "description": "Web developer passionate about creating incredible experiences, with skills in HTML, CSS, JavaScript and React, always seeking improvement and innovation."
+  },
+
+  "aboutMe": {
+    "subtitle": "About me",
+    "title": "Who am I?",
+    "paragraph-top": "I'm a 16-year-old front-end developer focused on creating modern and responsive interfaces. I work on my own projects and freelance projects, using HTML, CSS, JavaScript, as well as Git, GitHub and TailwindCSS.",
+    "paragraph-mid": "Proactive, communicative and adaptable, I value teamwork and the search for creative solutions. My mission is to transform ideas into technological projects that deliver impact and quality.",
+    "paragraph-bottom": "I am always learning and evolving to create efficient and innovative digital experiences.",
+    "seeMore": "See more"
+  },
+
+  "techs": {
+    "subtitle": "Technologies",
+    "title": "My Skills",
+    "tools": "Tools:"
+  },
+
+  "projects": {
+    "subtitle": "Projects",
+    "title": "My Projects",
+    "typeProject": "Personal Project",
+    "description-MaqSoft": "Institutional and functional website for the Maq Soft ice cream shop, with an attractive home page and integrated shopping cart to facilitate online orders.",
+    "description-Portfolio": "Portfolio with front-end projects developed with a focus on responsive design, usability and solutions that generate real results for clients and companies.",
+    "description-ToDoList": "Functional To-Do List developed with React and styled with Styled-Components, allowing efficient organization of tasks with an intuitive and modern interface.",
+    "description-DolcciB": "Dolcci'B confectionery website with a delicate look, complete menu and shopping cart system for quick, intuitive and personalized online orders.",
+    "description-MarcasDoAndre": "Portfolio developed for a designer, with a minimalist and functional layout, focused on presenting and selling your work with elegance and usability.",
+    "description-Conversor": "Currency converter integrated with an API, allowing you to convert values in reais to different currencies in a practical, accurate and real-time way.",
+    "techs-subtitle": "Technologies used"
+  },
+
+  "experience": {
+    "subtitle": "Experience",
+    "title": "My Trajectory",
+    "2023-title": "First contact with programming",
+    "2023-paragraph": "I discovered programming and fell in love with creating interfaces that generate value and unique experiences.",
+    "2024-title": "Freelance Front-End Developer",
+    "2024-paragraph": "I create modern, responsive interfaces focused on user experience. I work on projects for companies and individuals, always aiming to add real value to their results through efficient digital solutions.",
+    "techs": "Main technologies:"
+  },
+
+  "form": {
+    "title": "Get in touch",
+    "description-top": "I am available to talk about projects, ideas or partnerships.",
+    "description-bottom": "Please fill out the form below and I will get back to you as soon as possible.",
+    "name-label": "Your name",
+    "name-placeholder": "Enter your name",
+    "email-label": "Your e-mail",
+    "email-placeholder": "example@gmail.com",
+    "msg-label": "Message",
+    "msg-placeholder": "Leave your message",
+    "btnSubmit": "Send"
+  },
+
+  "footer": {
+    "start": {
+      "title": "Home",
+      "returnToTop-link": "Return to Top"
+    },
+
+    "about": {
+      "title": "About",
+      "aboutMe-link": "About Me",
+      "cv-link": "Curriculum"
+    },
+
+    "abilities": {
+      "title": "My Skills",
+      "tech-link": "Techs",
+      "tool-link": "Tools"
+    },
+
+    "projects": {
+      "title": "Projects",
+      "projects-link": "See projects"
+    },
+
+    "experience": {
+      "title": "Experience",
+      "xp-link": "My journey"
+    },
+
+    "copyright": "All rights reserved."
+  }
+}

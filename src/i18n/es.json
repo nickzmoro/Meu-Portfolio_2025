@@ -1,0 +1,98 @@
+{
+  "header": {
+    "aboutMe": "Acerca de mí",
+    "abilities": "Habilidades",
+    "projects": "Proyectos",
+    "experiences": "Experiencias",
+    "contact": "Contacto",
+    "downloadCv": "Descargar CV"
+  },
+
+  "home": {
+    "subtitle": "Introducción",
+    "stack": "Desarrollador Front-End",
+    "description": "Desarrollador web apasionado por crear experiencias increíbles, con habilidades en HTML, CSS, JavaScript y React, siempre Buscando la mejora y la innovación."
+  },
+
+  "aboutMe": {
+    "subtitle": "Acerca de mí",
+    "title": "¿Quién soy yo?",
+    "paragraph-top": "Soy un desarrollador front-end de 16 años enfocado en crear interfaces modernas y receptivas. Trabajo en proyectos propios y freelance, utilizando HTML, CSS, JavaScript, así como Git, GitHub y TailwindCSS.",
+    "paragraph-mid": "Proactivo, comunicativo y adaptable, valoro el trabajo en equipo y la búsqueda de soluciones creativas. Mi misión es transformar ideas en proyectos tecnológicos que generen impacto y calidad.",
+    "paragraph-bottom": "Siempre estoy aprendiendo y evolucionando para crear experiencias digitales eficientes e innovadoras.",
+    "seeMore": "Ver más"
+  },
+
+  "techs": {
+    "subtitle": "Tecnologías",
+    "title": "Mis habilidades",
+    "tools": "Herramientas:"
+  },
+
+  "projects": {
+    "subtitle": "Proyectos",
+    "title": "Mis Proyectos",
+    "typeProject": "Proyecto Personal",
+    "description-MaqSoft": "Sitio web institucional y funcional para la heladería Maq Soft, con una atractiva página de inicio y carrito de compras integrado para facilitar los pedidos online.",
+    "description-Portfolio": "Portafolio con proyectos front-end desarrollados con foco en diseño responsive, usabilidad y soluciones que generan resultados reales para clientes y empresas.",
+    "description-ToDoList": "Lista de tareas funcional desarrollada con React y diseñada con Styled-Components, lo que permite una organización eficiente de tareas con una interfaz intuitiva y moderna.",
+    "description-DolcciB": "Web de confitería Dolcci'B con una estética delicada, menú completo y sistema de carrito de compra para pedidos online rápidos, intuitivos y personalizados.",
+    "description-MarcasDoAndre": "Portafolio desarrollado para un diseñador, con un diseño minimalista y funcional, enfocado en presentar y vender tu trabajo con elegancia y usabilidad.",
+    "description-Conversor": "Conversor de divisas integrado con una API, permitiendo convertir valores en reales a diferentes monedas de forma práctica, precisa y en tiempo real.",
+    "techs-subtitle": "Tecnologías utilizadas"
+  },
+
+  "experience": {
+    "subtitle": "Experiencia",
+    "title": "Mi Viaje",
+    "2023-title": "Primer contacto con la programación",
+    "2023-paragraph": "Descubrí la programación y me enamoré de crear interfaces que generen valor y experiencias únicas.",
+    "2024-title": "Desarrollador front-end independiente",
+    "2024-paragraph": "Creo interfaces modernas y responsivas centradas en la experiencia del usuario. Trabajo en proyectos para empresas o particulares, siempre con el objetivo de aportar valor real a sus resultados a través de soluciones digitales eficientes.",
+    "techs": "Principales tecnologías:"
+  },
+
+  "form": {
+    "title": "Ponte en contacto",
+    "description-top": "Estoy disponible para hablar de proyectos, ideas o asociaciones.",
+    "description-bottom": "Por favor, rellene el formulario a continuación y me pondré en contacto con usted lo antes posible.",
+    "name-label": "Su nombre",
+    "name-placeholder": "Introduce tu nombre",
+    "email-label": "Tu e-mail",
+    "email-placeholder": "ejemplo@gmail.com",
+    "msg-label": "Mensaje",
+    "msg-placeholder": "Deja tu mensaje",
+    "btnSubmit": "Enviar"
+  },
+
+  "footer": {
+    "start": {
+      "title": "Home",
+      "returnToTop-link": "Volver arriba"
+    },
+
+    "about": {
+      "title": "Sobre",
+      "aboutMe-link": "Acerca de mí",
+      "cv-link": "Curriculum"
+    },
+
+    "abilities": {
+      "title": "Habilidades",
+      "tech-link": "Tecnologías",
+      "tool-link": "Herramientas"
+    },
+
+    "projects": {
+      "title": "Proyectos",
+      "projects-link": "Ver proyectos"
+    },
+
+    "experience": {
+      "title": "Experiencia",
+      "xp-link": "Mi viaje"
+    },
+
+    "copyright": "Todos os direitos reservados."
+  }
+}

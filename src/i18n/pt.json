@@ -1,0 +1,98 @@
+{
+  "header": {
+    "aboutMe": "Sobre mim",
+    "abilities": "Habilidades",
+    "projects": "Projetos",
+    "experiences": "Experiências",
+    "contact": "Contato",
+    "downloadCv": "Baixar CV"
+  },
+
+  "home": {
+    "subtitle": "Introdução",
+    "stack": "Desenvolvedor Front-End",
+    "description": "Desenvolvedor web apaixonado por criar experiências incríveis, com habilidades em HTML, CSS, JavaScript e React, sempre buscando aprimoramento e inovação."
+  },
+
+  "aboutMe": {
+    "subtitle": "Sobre mim",
+    "title": "Quem eu sou?",
+    "paragraph-top": "Sou um desenvolvedor front-end de 16 anos, focado em criar interfaces modernas e responsivas. Trabalho em projetos próprios e freelances, utilizando HTML, CSS, JavaScript, além de Git, GitHub e TailwindCSS.",
+    "paragraph-mid": "Proativo, comunicativo e adaptável, valorizo o trabalho em equipe e a busca por soluções criativas. Minha missão é transformar ideias em projetos tecnológicos que entreguem impacto e qualidade.",
+    "paragraph-bottom": "Estou sempre aprendendo e evoluindo para criar experiências digitais eficientes e inovadoras.",
+    "seeMore": "Veja mais"
+  },
+
+  "techs": {
+    "subtitle": "Tecnologias",
+    "title": "Minhas Habilidades",
+    "tools": "Ferramentas:"
+  },
+
+  "projects": {
+    "subtitle": "Projetos",
+    "title": "Meus Projetos",
+    "typeProject": "Projeto Pessoal",
+    "description-MaqSoft": "Site institucional e funcional da sorveteria Maq Soft, com página inicial atrativa e carrinho de compras integrado para facilitar pedidos online.",
+    "description-Portfolio": "Portfólio com projetos front-end desenvolvidos com foco em design responsivo, usabilidade e soluções que geram resultados reais para clientes e empresas.",
+    "description-ToDoList": "To-Do List funcional desenvolvida com React e estilizada com Styled-Components, permitindo organização eficiente de tarefas com uma interface intuitiva e moderna.",
+    "description-DolcciB": "Site da doceria Dolcci'B com visual delicado, cardápio completo e sistema de carrinho para pedidos online rápidos, intuitivos e personalizados.",
+    "description-MarcasDoAndre": "Portfólio desenvolvido para um designer, com layout minimalista e funcional, focado em apresentar e vender seus trabalhos com elegância e usabilidade.",
+    "description-Conversor": "Conversor de moedas integrado a uma API, permitindo converter valores em real para diversas moedas de forma prática, precisa e em tempo real.",
+    "techs-subtitle": "Tecnologias utilizadas"
+  },
+
+  "experience": {
+    "subtitle": "Experiência",
+    "title": "Minha Trajetória",
+    "2023-title": "Primeiro contato com a programação",
+    "2023-paragraph": "Descobri a programação e me apaixonei por criar interfaces que geram valor e experiências únicas.",
+    "2024-title": "Desenvolvedor Front-End Freelancer",
+    "2024-paragraph": "Crio interfaces modernas, responsivas e focadas na experiência do usuário. Atuo em projetos para empresas ou pessoais, sempre com o objetivo de agregar valor real aos seus resultados por meio de soluções digitais eficientes.",
+    "techs": "Principais tecnologias:"
+  },
+
+  "form": {
+    "title": "Entre em contato",
+    "description-top": "Fico à disposição para conversarmos sobre projetos, ideias ou parcerias.",
+    "description-bottom": "Preencha o formulário abaixo e retornarei o mais breve possível.",
+    "name-label": "Seu nome",
+    "name-placeholder": "Digite o seu nome",
+    "email-label": "Seu e-mail",
+    "email-placeholder": "exemplo@gmail.com",
+    "msg-label": "Mensagem",
+    "msg-placeholder": "Deixe a sua mensagem",
+    "btnSubmit": "Enviar"
+  },
+
+  "footer": {
+    "start": {
+      "title": "Início",
+      "returnToTop-link": "Voltar para o topo"
+    },
+
+    "about": {
+      "title": "Sobre",
+      "aboutMe-link": "Sobre Mim",
+      "cv-link": "Currículo"
+    },
+
+    "abilities": {
+      "title": "Habilidades",
+      "tech-link": "Tecnologias",
+      "tool-link": "Ferramentas"
+    },
+
+    "projects": {
+      "title": "Projetos",
+      "projects-link": "Ver projetos"
+    },
+
+    "experience": {
+      "title": "Experiência",
+      "xp-link": "Minha jornada"
+    },
+
+    "copyright": "Todos os direitos reservados."
+  }
+}
