@@ -114,13 +114,13 @@ function Home() {
           id="sobre-mim"
         >
           <div className="about-container w-[80%] h-[53%] flex justify-center items-center px-5 max-sm:w-[98%]">
-            <div className="card-about h-full flex max-xl:flex-col items-start gap-8 px-8 py-8 max-sm:p-6 border-[1px] border-[#ffffff15] bg-[linear-gradient(to_right,#04071D_0%,#0C0E23_100%)] rounded-[20px]">
+            <div className="card-about h-full flex max-xl:flex-col items-start gap-8 px-8 py-8 max-sm:p-6 border-[1px] border-[#ffffff15] bg-[#0C0E23] rounded-[20px]">
               <div className="my-image max-xl:w-full">
                 <img
                   src={me}
                   alt="Me"
                   loading="lazy"
-                  className="max-xl:object-cover max-xl:w-full max-xl:h-[300px] rounded-[12px] max-sm:h-[150px]"
+                  className="max-xl:object-cover max-xl:w-full max-xl:h-[300px] rounded-[100px] max-sm:h-[150px]"
                 />
               </div>
               <div className="about-description h-full w-full flex flex-col justify-between">
