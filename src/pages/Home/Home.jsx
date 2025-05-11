@@ -55,23 +55,49 @@ function Home() {
           </div>
           <div className="home-container w-[80%] h-[90%] flex justify-between items-center z-10 px-5 max-md:flex-col max-md:gap-8">
             <div className="introduction-txt">
-              <div className="section-name flex items-center gap-4 mb-5">
+              <div
+                className="section-name flex items-center gap-4 mb-5"
+                data-aos="fade-right"
+                data-aos-delay="1000"
+              >
                 <div className="line-title w-[100px] h-[1px] bg-[#404CD1]"></div>
-                <h3 className="section-name">{t("home.subtitle")}</h3>
+                <h3
+                  className="section-name"
+                  data-aos="fade-right"
+                  data-aos-delay="1100"
+                >
+                  {t("home.subtitle")}
+                </h3>
               </div>
-              <h1 className="uppercase font-bold text-[4.5rem]/[1.1] max-sm:text-[4rem]">
+              <h1
+                className="uppercase font-bold text-[4.5rem]/[1.1] max-sm:text-[4rem]"
+                data-aos="fade-right"
+                data-aos-delay="1200"
+              >
                 Nicolas <br />
                 Moro
               </h1>
-              <h2 className="uppercase font-semibold text-[1.2rem] text-[#404CD1] mt-2">
+              <h2
+                className="uppercase font-semibold text-[1.2rem] text-[#404CD1] mt-2"
+                data-aos="fade-right"
+                data-aos-delay="1300"
+              >
                 {t("home.stack")}
               </h2>
-              <p className="text-[#ccc] max-w-[500px] mt-3 border-l-2 border-[#404CD1] pl-4">
+              <p
+                className="text-[#ccc] max-w-[500px] mt-3 border-l-2 border-[#404CD1] pl-4"
+                data-aos="fade-right"
+                data-aos-delay="1400"
+              >
                 {t("home.description")}
               </p>
             </div>
             <div className="my-socials flex item-center gap-10">
-              <div className="image-programmer max-lg:hidden">
+              <div
+                className="image-programmer max-lg:hidden"
+                data-aos="zoom-out"
+                data-aos-delay="1500"
+              >
                 <img
                   src={programmer}
                   alt="Programmer"
@@ -79,7 +105,11 @@ function Home() {
                   className="drop-shadow-[0_4px_50px_#404cd139] select-none"
                 />
               </div>
-              <div className="socials-media flex flex-col gap-2 items-center justify-center max-md:flex-row">
+              <div
+                className="socials-media flex flex-col gap-2 items-center justify-center max-md:flex-row"
+                data-aos="flip-left"
+                data-aos-delay="1600"
+              >
                 <div className="line-socials w-[1px] h-[100px] bg-[#404CD1] max-md:w-[80px] max-md:h-[1px]"></div>
                 <a
                   href="https://www.linkedin.com/in/devnicolas"
@@ -115,7 +145,7 @@ function Home() {
         >
           <div className="about-container w-[80%] h-[53%] flex justify-center items-center px-5 max-sm:w-[98%]">
             <div className="card-about h-full flex max-xl:flex-col items-start gap-8 px-8 py-8 max-sm:p-6 border-[1px] border-[#ffffff15] bg-[#0C0E23] rounded-[20px]">
-              <div className="my-image max-xl:w-full">
+              <div className="my-image max-xl:w-full" data-aos="zoom-in">
                 <img
                   src={me}
                   alt="Me"
@@ -125,22 +155,45 @@ function Home() {
               </div>
               <div className="about-description h-full w-full flex flex-col justify-between">
                 <div>
-                  <h3 className="section-name">{t("aboutMe.subtitle")}</h3>
-                  <h2 className="subtitle">{t("aboutMe.title")}</h2>
-                  <div className="line-divisor-content mt-2.5 mb-5"></div>
-                  <p className="about-description-p mb-1.5">
+                  <h3 className="section-name" data-aos="fade-left">
+                    {t("aboutMe.subtitle")}
+                  </h3>
+                  <h2 className="subtitle" data-aos="fade-left">
+                    {t("aboutMe.title")}
+                  </h2>
+                  <div
+                    className="line-divisor-content mt-2.5 mb-5"
+                    data-aos="fade-left"
+                  ></div>
+                  <p
+                    className="about-description-p mb-1.5"
+                    data-aos="fade-left"
+                    data-aos-delay="50"
+                  >
                     {t("aboutMe.paragraph-top")}
                   </p>
-                  <p className="about-description-p mb-1.5">
+                  <p
+                    className="about-description-p mb-1.5"
+                    data-aos="fade-left"
+                    data-aos-delay="100"
+                  >
                     {t("aboutMe.paragraph-mid")}
                   </p>
-                  <p className="about-description-p">
+                  <p
+                    className="about-description-p"
+                    data-aos="fade-left"
+                    data-aos-delay="150"
+                  >
                     {t("aboutMe.paragraph-bottom")}
                   </p>
                 </div>
                 <div>
                   <div className="w-full h-[1px] bg-[#ffffff4b] mt-3 mb-3"></div>
-                  <div className="buttons flex items-center">
+                  <div
+                    className="buttons flex items-center"
+                    data-aos="fade-down"
+                    data-aos-delay="200"
+                  >
                     <a
                       href={MeuCurriculo}
                       className="flex items-center mr-3 px-4 py-2 border-[1px] border-[#ffffff4b] rounded-[15px] hover:bg-[#111330] hover:transition ease-in-out duration-200"
@@ -176,7 +229,10 @@ function Home() {
           id="habilidades"
         >
           <div className="skills-container w-[80%] h-[90%] flex flex-col justify-center items-center gap-10 max-sm:w-[90%]">
-            <div className="section-title-container flex flex-col gap-2 items-center">
+            <div
+              className="section-title-container flex flex-col gap-2 items-center"
+              data-aos="zoom-in"
+            >
               <h3 className="section-name">{t("techs.subtitle")}</h3>
               <h2 className="subtitle">{t("techs.title")}</h2>
               <div className="line-divisor-content mt-2"></div>
@@ -188,26 +244,31 @@ function Home() {
                     children={"HTML5"}
                     sizeProgressBar={"500px"}
                     colorTechnology={"bg-[#E44D25]"}
+                    aosDelay={50}
                   />
                   <ProgressBarSkills
                     children={"CSS3"}
                     sizeProgressBar={"500px"}
                     colorTechnology={"bg-[#0089CA]"}
+                    aosDelay={100}
                   />
                   <ProgressBarSkills
                     children={"JavaScript"}
                     sizeProgressBar={"475px"}
                     colorTechnology={"bg-[#F0DB4F]"}
+                    aosDelay={150}
                   />
                   <ProgressBarSkills
                     children={"TypeScript"}
                     sizeProgressBar={"250px"}
                     colorTechnology={"bg-[#3178C6]"}
+                    aosDelay={200}
                   />
                   <ProgressBarSkills
                     children={"React.JS"}
                     sizeProgressBar={"450px"}
                     colorTechnology={"bg-[#57BDD9]"}
+                    aosDelay={250}
                   />
                 </div>
                 <div className="flex flex-col justify-between">
@@ -216,20 +277,27 @@ function Home() {
                       children={"Git"}
                       sizeProgressBar={"450px"}
                       colorTechnology={"bg-[#F05133]"}
+                      aosDelay={300}
                     />
                     <ProgressBarSkills
                       children={"Bootstrap"}
                       sizeProgressBar={"350px"}
                       colorTechnology={"bg-[#7311F6]"}
+                      aosDelay={350}
                     />
                     <ProgressBarSkills
                       children={"TailwindCSS"}
                       sizeProgressBar={"460px"}
                       colorTechnology={"bg-[#38BDF8]"}
+                      aosDelay={400}
                     />
                   </div>
 
-                  <div className="flex flex-col gap-2 mt-4">
+                  <div
+                    className="flex flex-col gap-2 mt-4"
+                    data-aos="fade-up"
+                    data-aos-delay="450"
+                  >
                     <p className="font-semibold text-[1.1rem]">
                       {t("techs.tools")}
                     </p>
@@ -278,12 +346,15 @@ function Home() {
           id="projetos"
         >
           <div className="projects-container w-[80%] h-[90%] flex flex-col justify-evenly gap-[50px] max-sm:w-[90%]">
-            <div className="projects-title flex flex-col justify-center items-center gap-2">
+            <div
+              className="projects-title flex flex-col justify-center items-center gap-2"
+              data-aos="zoom-in"
+            >
               <h3 className="section-name">{t("projects.subtitle")}</h3>
               <h2 className="subtitle">{t("projects.title")}</h2>
               <div className="line-divisor-content mt-2"></div>
             </div>
-            <div className="projects-carousel z-10">
+            <div className="projects-carousel z-10" data-aos="fade-up">
               <ProjectsCard />
             </div>
           </div>
@@ -295,9 +366,12 @@ function Home() {
           id="experiência"
         >
           <div className="experience-content w-[80%] h-[60%] flex flex-col items-center justify-evenly gap-5 max-sm:w-[90%]">
-            <div className="exp-title flex flex-col justify-center items-center gap-2">
-              <h3 className="section-name">Experiência</h3>
-              <h2 className="subtitle">Minha Trajetória</h2>
+            <div
+              className="exp-title flex flex-col justify-center items-center gap-2"
+              data-aos="zoom-in"
+            >
+              <h3 className="section-name">{t("experience.subtitle")}</h3>
+              <h2 className="subtitle">{t("experience.title")}</h2>
               <div className="line-divisor-content mt-2"></div>
             </div>
             <div className="exp-cards flex items-end gap-10 mt-5 max-lg:flex-col max-lg:gap-3 max-lg:items-center relative">
@@ -306,8 +380,12 @@ function Home() {
                 title={t("experience.2023-title")}
                 description={t("experience.2023-paragraph")}
                 className="translate-y-5"
+                dataAos={"fade-right"}
               />
-              <div className="timeline flex flex-col items-center mb-10 max-lg:mb-0">
+              <div
+                className="timeline flex flex-col items-center mb-10 max-lg:mb-0"
+                data-aos="flip-left"
+              >
                 <div className="line-smaller w-[1px] h-[60px] bg-white max-lg:h-[25px] max-lg:bg-[#ffffff65]"></div>
                 <div className="ball w-[25px] h-[25px] border border-white rounded-full hover:bg-[#404cd175] transition-all ease-in-out duration-200 max-lg:hidden"></div>
                 <div className="line-bigger w-[1px] h-[120px] bg-white max-lg:hidden"></div>
@@ -331,6 +409,7 @@ function Home() {
                     img: "/assets/styled-components.png",
                   },
                 ]}
+                dataAos={"fade-left"}
               />
             </div>
           </div>

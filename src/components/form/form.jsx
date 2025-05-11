@@ -3,7 +3,6 @@ import bgForm from "../../assets/images/background-form.png";
 import "./form.css";
 import { ClipLoader } from "react-spinners";
 import { IoClose } from "react-icons/io5";
-import { FaCheck } from "react-icons/fa";
 import { useTranslation } from "react-i18next";
 
 const Form = () => {
@@ -105,7 +104,10 @@ const Form = () => {
       className="w-screen min-h-screen flex items-center justify-center"
       id="contato"
     >
-      <div className="w-[80%] h-[70%] bg-[#0C0E23] border border-[#ffffff15] rounded-xl overflow-hidden max-sm:w-[90%]">
+      <div
+        className="w-[80%] h-[70%] bg-[#0C0E23] border border-[#ffffff15] rounded-xl overflow-hidden max-sm:w-[90%]"
+        data-aos="fade-up"
+      >
         <div className="flex justify-between items-start">
           <div className="px-[60px] py-[50px] max-md:p-7 flex flex-col gap-5 overflow-hidden">
             <div>

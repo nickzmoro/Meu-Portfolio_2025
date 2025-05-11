@@ -1,11 +1,14 @@
 import { useTranslation } from "react-i18next";
 
-const CardXp = ({ date, title, description, technologies }) => {
+const CardXp = ({ date, title, description, technologies, dataAos }) => {
   const { t } = useTranslation();
 
   return (
     <>
-      <div className="card-container px-7 py-7 bg-[#ffffff1e] rounded-xl border border-[#ffffff17] h-[fit-content]">
+      <div
+        className="card-container px-7 py-7 bg-[#ffffff1e] rounded-xl border border-[#ffffff17] h-[fit-content]"
+        data-aos={dataAos}
+      >
         <div>
           <p className="text-[0.9rem] text-[#5564FF] font-[500]">{date}</p>
           <h3 className="text-[1.15rem]/[1.3] font-semibold max-w-[350px]">
