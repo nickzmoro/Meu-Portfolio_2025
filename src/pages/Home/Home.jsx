@@ -242,31 +242,31 @@ function Home() {
                 <div className="flex flex-col gap-4">
                   <ProgressBarSkills
                     children={"HTML5"}
-                    sizeProgressBar={"500px"}
+                    sizeProgressBar={"100%"}
                     colorTechnology={"bg-[#E44D25]"}
                     aosDelay={50}
                   />
                   <ProgressBarSkills
                     children={"CSS3"}
-                    sizeProgressBar={"500px"}
+                    sizeProgressBar={"100%"}
                     colorTechnology={"bg-[#0089CA]"}
                     aosDelay={100}
                   />
                   <ProgressBarSkills
                     children={"JavaScript"}
-                    sizeProgressBar={"475px"}
+                    sizeProgressBar={"98%"}
                     colorTechnology={"bg-[#F0DB4F]"}
                     aosDelay={150}
                   />
                   <ProgressBarSkills
                     children={"TypeScript"}
-                    sizeProgressBar={"250px"}
+                    sizeProgressBar={"50%"}
                     colorTechnology={"bg-[#3178C6]"}
                     aosDelay={200}
                   />
                   <ProgressBarSkills
                     children={"React.JS"}
-                    sizeProgressBar={"450px"}
+                    sizeProgressBar={"90%"}
                     colorTechnology={"bg-[#57BDD9]"}
                     aosDelay={250}
                   />
@@ -275,19 +275,19 @@ function Home() {
                   <div className="flex flex-col gap-4">
                     <ProgressBarSkills
                       children={"Git"}
-                      sizeProgressBar={"450px"}
+                      sizeProgressBar={"95%"}
                       colorTechnology={"bg-[#F05133]"}
                       aosDelay={300}
                     />
                     <ProgressBarSkills
                       children={"Bootstrap"}
-                      sizeProgressBar={"350px"}
+                      sizeProgressBar={"75%"}
                       colorTechnology={"bg-[#7311F6]"}
                       aosDelay={350}
                     />
                     <ProgressBarSkills
                       children={"TailwindCSS"}
-                      sizeProgressBar={"460px"}
+                      sizeProgressBar={"90%"}
                       colorTechnology={"bg-[#38BDF8]"}
                       aosDelay={400}
                     />
