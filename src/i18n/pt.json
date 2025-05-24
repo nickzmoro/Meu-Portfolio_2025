@@ -39,6 +39,7 @@
     "description-DolcciB": "Site da doceria Dolcci'B com visual delicado, cardápio completo e sistema de carrinho para pedidos online rápidos, intuitivos e personalizados.",
     "description-MarcasDoAndre": "Portfólio desenvolvido para um designer, com layout minimalista e funcional, focado em apresentar e vender seus trabalhos com elegância e usabilidade.",
     "description-Conversor": "Conversor de moedas integrado a uma API, permitindo converter valores em real para diversas moedas de forma prática, precisa e em tempo real.",
+    "description-DevNews": "Dev News é um blog de artigos para devs, feito com React e API pública. Conta com filtros por tags e busca por palavras-chave, focando no consumo de dados e na prática com Axios.",
     "techs-subtitle": "Tecnologias utilizadas"
   },
 

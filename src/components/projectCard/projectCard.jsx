@@ -1,6 +1,5 @@
 // import do React ou bibliotecas
 import { Swiper, SwiperSlide } from "swiper/react";
-import { TbApi } from "react-icons/tb";
 
 // Import Swiper styles
 import "swiper/css";
@@ -13,6 +12,7 @@ import MarcasDoAndre from "../../assets/images/projects/marcas-do-andre.png";
 import ConversorDeMoedas from "../../assets/images/projects/conversor-moedas.png";
 import ToDoList from "../../assets/images/projects/to-do-list-react.png";
 import Slide from "../projectSlide/projectSlide.jsx";
+import DevNews from "../../assets/images/projects/dev-news.png";
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
@@ -100,6 +100,38 @@ const Projects = () => {
             {
               name: "TailwindCSS",
               img: "/assets/tailwind-css.png",
+            },
+          ]}
+        />
+      </SwiperSlide>
+      <SwiperSlide>
+        <Slide
+          nameProject={"Dev News"}
+          img={DevNews}
+          description={t("projects.description-DevNews")}
+          type={t("projects.typeProject")}
+          linkGithub={"https://github.com/nickzmoro/dev-news"}
+          linkDeploy={"https://dev-news-ten.vercel.app/"}
+          tech={[
+            {
+              name: "HTML5",
+              img: "/assets/html.png",
+            },
+            {
+              name: "JavaScript",
+              img: "/assets/javascript.png",
+            },
+            {
+              name: "ReactJS",
+              img: "/assets/react.png",
+            },
+            {
+              name: "TailwindCSS",
+              img: "/assets/tailwind-css.png",
+            },
+            {
+              name: "API & Axios",
+              img: "/assets/api.png",
             },
           ]}
         />
