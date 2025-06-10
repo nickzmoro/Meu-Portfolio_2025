@@ -40,6 +40,8 @@
     "description-MarcasDoAndre": "Portfólio desenvolvido para um designer, com layout minimalista e funcional, focado em apresentar e vender seus trabalhos com elegância e usabilidade.",
     "description-Conversor": "Conversor de moedas integrado a uma API, permitindo converter valores em real para diversas moedas de forma prática, precisa e em tempo real.",
     "description-DevNews": "Dev News é um blog de artigos para devs, feito com React e API pública. Conta com filtros por tags e busca por palavras-chave, focando no consumo de dados e na prática com Axios.",
+    "description-MyWallet": "My Wallet, uma aplicação Front-End desenvolvida com o objetivo de proporcionar uma solução prática e intuitiva para o controle de finanças pessoais.",
+    "description-DevMovies": "O DevFlix é um projeto responsivo desenvolvido com ReactJS que simula uma plataforma de streaming, apresentando listagens dinâmicas de filmes e séries.",
     "techs-subtitle": "Tecnologias utilizadas"
   },
 

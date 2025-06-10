@@ -10,9 +10,10 @@ import MaqSoft from "../../assets/images/projects/maq-soft.png";
 import MeuPortfolio from "../../assets/images/projects/portfolio.png";
 import MarcasDoAndre from "../../assets/images/projects/marcas-do-andre.png";
 import ConversorDeMoedas from "../../assets/images/projects/conversor-moedas.png";
-import ToDoList from "../../assets/images/projects/to-do-list-react.png";
+import DevMovies from "../../assets/images/projects/dev-movies.png";
 import Slide from "../projectSlide/projectSlide.jsx";
 import DevNews from "../../assets/images/projects/dev-news.png";
+import MyWallet from "../../assets/images/projects/my-wallet.png";
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
@@ -44,6 +45,42 @@ const Projects = () => {
         },
       }}
     >
+      <SwiperSlide>
+        <Slide
+          nameProject={"MyWallet"}
+          img={MyWallet}
+          description={t("projects.description-MyWallet")}
+          type={t("projects.typeProject")}
+          linkGithub={"https://github.com/nickzmoro/mywallet"}
+          linkDeploy={"https://my-wallet-sand.vercel.app/"}
+          tech={[
+            {
+              name: "HTML5",
+              img: "/assets/html.png",
+            },
+            {
+              name: "JavaScript",
+              img: "/assets/javascript.png",
+            },
+            {
+              name: "ReactJS",
+              img: "/assets/react.png",
+            },
+            {
+              name: "TailwindCSS",
+              img: "/assets/tailwind-css.png",
+            },
+            {
+              name: "Zustand",
+              img: "/assets/zustand.png",
+            },
+            {
+              name: "Chart.js",
+              img: "/assets/chartjs.png",
+            },
+          ]}
+        />
+      </SwiperSlide>
       <SwiperSlide>
         <Slide
           nameProject={"Maq Soft"}
@@ -78,12 +115,12 @@ const Projects = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Slide
-          nameProject={"Portfólio"}
-          img={MeuPortfolio}
-          description={t("projects.description-Portfolio")}
+          nameProject={"Dev Movies"}
+          img={DevMovies}
+          description={t("projects.description-DevMovies")}
           type={t("projects.typeProject")}
-          linkGithub={"https://github.com/nickzmoro/Meu-Portfolio_2025"}
-          linkDeploy={"#"}
+          linkGithub={"https://github.com/nickzmoro/dev-movies"}
+          linkDeploy={"https://dev-movies-six.vercel.app/"}
           tech={[
             {
               name: "HTML5",
@@ -98,8 +135,12 @@ const Projects = () => {
               img: "/assets/react.png",
             },
             {
-              name: "TailwindCSS",
-              img: "/assets/tailwind-css.png",
+              name: "Styled-Components",
+              img: "/assets/styled-components.png",
+            },
+            {
+              name: "API & Axios",
+              img: "/assets/api.png",
             },
           ]}
         />
@@ -138,20 +179,16 @@ const Projects = () => {
       </SwiperSlide>
       <SwiperSlide>
         <Slide
-          nameProject={"To-Do-List"}
-          img={ToDoList}
-          description={t("projects.description-ToDoList")}
+          nameProject={"Portfólio"}
+          img={MeuPortfolio}
+          description={t("projects.description-Portfolio")}
           type={t("projects.typeProject")}
-          linkGithub={"https://github.com/nickzmoro/To-Do-List-ReactJS"}
-          linkDeploy={"https://to-do-list-react-js-peach.vercel.app/"}
+          linkGithub={"https://github.com/nickzmoro/Meu-Portfolio_2025"}
+          linkDeploy={"#"}
           tech={[
             {
               name: "HTML5",
               img: "/assets/html.png",
-            },
-            {
-              name: "CSS3",
-              img: "/assets/css.png",
             },
             {
               name: "JavaScript",
@@ -162,8 +199,8 @@ const Projects = () => {
               img: "/assets/react.png",
             },
             {
-              name: "Styled-Components",
-              img: "/assets/styled-components.png",
+              name: "TailwindCSS",
+              img: "/assets/tailwind-css.png",
             },
           ]}
         />
