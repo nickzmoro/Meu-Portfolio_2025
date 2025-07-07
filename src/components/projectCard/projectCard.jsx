@@ -14,6 +14,7 @@ import DevMovies from "../../assets/images/projects/dev-movies.png";
 import Slide from "../projectSlide/projectSlide.jsx";
 import DevNews from "../../assets/images/projects/dev-news.png";
 import MyWallet from "../../assets/images/projects/my-wallet.png";
+import Devlingo from "../../assets/images/projects/devlingo.png";
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
@@ -45,6 +46,38 @@ const Projects = () => {
         },
       }}
     >
+      <SwiperSlide>
+        <Slide
+          nameProject={"Devlingo"}
+          img={Devlingo}
+          description={t("projects.description-Devlingo")}
+          type={t("projects.typeProject")}
+          linkGithub={"https://github.com/nickzmoro/devlingo"}
+          linkDeploy={"https://devlingo-seven.vercel.app/"}
+          tech={[
+            {
+              name: "HTML5",
+              img: "/assets/html.png",
+            },
+            {
+              name: "JavaScript",
+              img: "/assets/javascript.png",
+            },
+            {
+              name: "ReactJS",
+              img: "/assets/react.png",
+            },
+            {
+              name: "TailwindCSS",
+              img: "/assets/tailwind-css.png",
+            },
+            {
+              name: "Chart.js",
+              img: "/assets/chartjs.png",
+            },
+          ]}
+        />
+      </SwiperSlide>
       <SwiperSlide>
         <Slide
           nameProject={"MyWallet"}

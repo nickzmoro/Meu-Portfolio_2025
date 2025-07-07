@@ -42,6 +42,7 @@
     "description-DevNews": "Dev News is a blog of articles for devs, made with React and public API. It has filters by tags and keyword searches, focusing on data consumption and practice with Axios.",
     "description-DevMovies": "DevFlix is a responsive project developed with ReactJS that simulates a streaming platform, presenting dynamic listings of movies and series.",
     "description-MyWallet": "My Wallet, a Front-End application developed with the aim of providing a practical and intuitive solution for controlling personal finances.",
+    "description-Devlingo": "Devlingo is a Front-End application built to help beginner developers test their knowledge in JavaScript, React, and TypeScript with interactive quizzes, visual feedback, and performance charts.",
     "techs-subtitle": "Technologies used"
   },
 
