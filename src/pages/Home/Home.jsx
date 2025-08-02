@@ -260,13 +260,13 @@ function Home() {
                   />
                   <ProgressBarSkills
                     children={"TypeScript"}
-                    sizeProgressBar={"50%"}
+                    sizeProgressBar={"75%"}
                     colorTechnology={"bg-[#3178C6]"}
                     aosDelay={200}
                   />
                   <ProgressBarSkills
                     children={"React.JS"}
-                    sizeProgressBar={"90%"}
+                    sizeProgressBar={"95%"}
                     colorTechnology={"bg-[#57BDD9]"}
                     aosDelay={250}
                   />
@@ -287,8 +287,14 @@ function Home() {
                     />
                     <ProgressBarSkills
                       children={"TailwindCSS"}
-                      sizeProgressBar={"90%"}
+                      sizeProgressBar={"100%"}
                       colorTechnology={"bg-[#38BDF8]"}
+                      aosDelay={400}
+                    />
+                    <ProgressBarSkills
+                      children={"Next.JS"}
+                      sizeProgressBar={"50%"}
+                      colorTechnology={"bg-[#bebebe]"}
                       aosDelay={400}
                     />
                   </div>
@@ -400,7 +406,9 @@ function Home() {
                   { name: "HTML5", img: "/assets/html.png" },
                   { name: "CSS3", img: "/assets/css.png" },
                   { name: "JavaScript", img: "/assets/javascript.png" },
+                  { name: "TypeScript", img: "/assets/typescript.png" },
                   { name: "ReactJS", img: "/assets/react.png" },
+                  { name: "Next.js", img: "/assets/nextjs.png" },
                   { name: "Git", img: "/assets/git.png" },
                   { name: "Bootstrap", img: "/assets/bootstrap.png" },
                   { name: "TailwindCSS", img: "/assets/tailwind-css.png" },
