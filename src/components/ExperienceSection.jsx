@@ -30,7 +30,9 @@ const ExperienceSection = () => {
             <div className="flex items-center">
               <div className="w-1/2 pr-8">
                 <CardXp
-                  date="2024 - Atual"
+                  date="Nov. 2024 - atualmente"
+                  local="Brasil - Remoto"
+                  bussiness="Freelancer"
                   title={t("experience.2024-title")}
                   description={t("experience.2024-paragraph")}
                   technologies={[
@@ -52,6 +54,27 @@ const ExperienceSection = () => {
                     },
                   ]}
                   dataAos={"fade-left"}
+                  achievementTopics={[
+                    {
+                      description: "Comunicação eficaz com clientes",
+                    },
+                    {
+                      description:
+                        "Desenvolvimento de interfaces responsivas e acessíveis",
+                    },
+                    {
+                      description:
+                        "Implementação de boas práticas de SEO e performance",
+                    },
+                    {
+                      description:
+                        "Entrega de projetos dentro do prazo estabelecido",
+                    },
+                    {
+                      description:
+                        "Criação de componentes reutilizáveis e escaláveis",
+                    },
+                  ]}
                 />
               </div>
               <div className="relative flex-shrink-0 w-2 h-2 bg-[#ffffff] rounded-full shadow-lg"></div>
@@ -64,10 +87,33 @@ const ExperienceSection = () => {
               <div className="relative flex-shrink-0 w-2 h-2 bg-[#ffffff] rounded-full shadow-lg"></div>
               <div className="w-1/2 pl-8">
                 <CardXp
-                  date="2024 - Atual"
+                  date="Ago. 2024 - atualmente"
+                  local="Bauru-SP - Presencial"
+                  bussiness="HD Inox"
                   title={t("experience.2024-title-hdinox")}
                   description={t("experience.2024-paragraph-hdinox")}
                   dataAos={"fade-left"}
+                  achievementTopics={[
+                    {
+                      description:
+                        "Desenvolvimento de disciplina e pontualidade no trabalho",
+                    },
+                    {
+                      description: "Trabalho em equipe e comunicação eficaz",
+                    },
+                    {
+                      description:
+                        "Organização de processos produtivos e controle de classe",
+                    },
+                    {
+                      description:
+                        "Responsabilidade na gestão de materiais e equipamentos",
+                    },
+                    {
+                      description:
+                        "Adaptabilidade a demandas e ritmos de produção diversos",
+                    },
+                  ]}
                 />
               </div>
             </div>
