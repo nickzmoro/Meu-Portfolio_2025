@@ -1,15 +1,15 @@
 import { useState } from "react";
 import { HiOutlineDownload } from "react-icons/hi";
-import MeuCurriculo from "../../assets/Meu-curriculo.pdf";
+import MeuCurriculo from "../../../assets/Meu-curriculo.pdf";
 import "./header.css";
 import { IoClose } from "react-icons/io5";
 import { FaUser, FaCode, FaBrain } from "react-icons/fa";
 import { HiAcademicCap } from "react-icons/hi";
 import { MdEmail } from "react-icons/md";
 import { useTranslation } from "react-i18next";
-import Brasil from "../../assets/images/brasil.png";
-import Eua from "../../assets/images/eua.png";
-import Espanha from "../../assets/images/espanha.png";
+import Brasil from "../../../assets/images/brasil.png";
+import Eua from "../../../assets/images/eua.png";
+import Espanha from "../../../assets/images/espanha.png";
 import { TbWorld } from "react-icons/tb";
 import { IoIosArrowDown } from "react-icons/io";
 

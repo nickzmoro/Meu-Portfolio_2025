@@ -1,5 +1,5 @@
 import { useState } from "react";
-import bgForm from "../../assets/images/background-form.png";
+import bgForm from "../../../assets/images/background-form.png";
 import "./form.css";
 import { ClipLoader } from "react-spinners";
 import { IoClose } from "react-icons/io5";

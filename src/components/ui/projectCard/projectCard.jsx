@@ -5,16 +5,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 // import de imagens e arquivos
-import DolcciB from "../../assets/images/projects/dolcci-b.png";
-import MaqSoft from "../../assets/images/projects/maq-soft.png";
-import MeuPortfolio from "../../assets/images/projects/portfolio.png";
-import MarcasDoAndre from "../../assets/images/projects/marcas-do-andre.png";
-import ConversorDeMoedas from "../../assets/images/projects/conversor-moedas.png";
-import DevMovies from "../../assets/images/projects/dev-movies.png";
+import DolcciB from "../../../assets/images/projects/dolcci-b.png";
+import MaqSoft from "../../../assets/images/projects/maq-soft.png";
+import MeuPortfolio from "../../../assets/images/projects/portfolio.png";
+import MarcasDoAndre from "../../../assets/images/projects/marcas-do-andre.png";
+import ConversorDeMoedas from "../../../assets/images/projects/conversor-moedas.png";
+import DevMovies from "../../../assets/images/projects/dev-movies.png";
 import Slide from "../projectSlide/projectSlide.jsx";
-import DevNews from "../../assets/images/projects/dev-news.png";
-import MyWallet from "../../assets/images/projects/my-wallet.png";
-import Devlingo from "../../assets/images/projects/devlingo.png";
+import DevNews from "../../../assets/images/projects/dev-news.png";
+import MyWallet from "../../../assets/images/projects/my-wallet.png";
+import Devlingo from "../../../assets/images/projects/devlingo.png";
 import { useTranslation } from "react-i18next";
 
 const Projects = () => {
