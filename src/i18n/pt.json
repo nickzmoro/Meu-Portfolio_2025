@@ -53,7 +53,26 @@
     "2024-title-hdinox": "Auxiliar de produção - Jovem Aprendiz",
     "2024-paragraph": "Crio interfaces modernas, responsivas e focadas na experiência do usuário. Atuo em projetos para empresas ou pessoais, sempre com o objetivo de agregar valor real aos seus resultados por meio de soluções digitais eficientes.",
     "2024-paragraph-hdinox": "Atuo como Jovem Aprendiz na HD Inox, auxiliando na montagem de produtos, abastecimento da linha de produção, embalagem e organização do ambiente de trabalho.",
-    "techs": "Principais tecnologias:"
+    "techs": "Principais tecnologias",
+    "learning": "Aprendizados",
+    "local-freelance": "Brasil - Remoto",
+    "date-freelance": "Nov. 2024 - atualmente",
+    "local-hdinox": "Bauru-SP - Remoto",
+    "date-hdinox": "Ago. 2024 - atualmente",
+    "topics-freelance": {
+      "1": "Comunicação eficaz com clientes",
+      "2": "Desenvolvimento de interfaces responsivas e acessíveis",
+      "3": "Implementação de boas práticas de SEO e performance",
+      "4": "Entrega de projetos dentro do prazo estabelecido",
+      "5": "Criação de componentes reutilizáveis e escaláveis"
+    },
+    "topics-hdinox": {
+      "1": "Desenvolvimento de disciplina e pontualidade no trabalho",
+      "2": "Trabalho em equipe e comunicação eficaz",
+      "3": "Organização de processos produtivos e controle de classe",
+      "4": "Responsabilidade na gestão de materiais e equipamentos",
+      "5": "Adaptabilidade a demandas e ritmos de produção diversos"
+    }
   },
 
   "form": {

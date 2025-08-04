@@ -55,7 +55,26 @@
     "2024-title-hdinox": "Production Assistant - Young Apprentice",
     "2024-paragraph-hdinox": "I work as a Young Apprentice at HD Inox, assisting in product assembly, supplying the production line, packaging, and organizing the work environment.",
     "2024-paragraph": "I create modern, responsive interfaces focused on user experience. I work on projects for companies and individuals, always aiming to add real value to their results through efficient digital solutions.",
-    "techs": "Main technologies:"
+    "techs": "Main technologies",
+    "learning": "Learning",
+    "local-freelance": "Brazil - Remote",
+    "date-freelance": "Nov. 2024 - currently",
+    "local-hdinox": "Bauru-SP - Remote",
+    "date-hdinox": "Aug. 2024 - currently",
+    "topics-freelance": {
+      "1": "Effective communication with clients",
+      "2": "Development of responsive and accessible interfaces",
+      "3": "Implementation of good SEO and performance practices",
+      "4": "Delivering projects on time",
+      "5": "Creation of reusable and scalable components"
+    },
+    "topics-hdinox": {
+      "1": "Developing discipline and punctuality at work",
+      "2": "Teamwork and effective communication",
+      "3": "Organization of production processes and class control",
+      "4": "Responsibility in managing materials and equipment",
+      "5": "Adaptability to different production demands and rhythms"
+    }
   },
 
   "form": {

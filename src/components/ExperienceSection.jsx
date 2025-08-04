@@ -30,8 +30,8 @@ const ExperienceSection = () => {
             <div className="flex items-center">
               <div className="w-1/2 pr-8">
                 <CardXp
-                  date="Nov. 2024 - atualmente"
-                  local="Brasil - Remoto"
+                  date={t("experience.date-freelance")}
+                  local={t("experience.local-freelance")}
                   bussiness="Freelancer"
                   title={t("experience.2024-title")}
                   description={t("experience.2024-paragraph")}
@@ -56,23 +56,19 @@ const ExperienceSection = () => {
                   dataAos={"fade-left"}
                   achievementTopics={[
                     {
-                      description: "Comunicação eficaz com clientes",
+                      description: t("experience.topics-freelance.1"),
                     },
                     {
-                      description:
-                        "Desenvolvimento de interfaces responsivas e acessíveis",
+                      description: t("experience.topics-freelance.2"),
                     },
                     {
-                      description:
-                        "Implementação de boas práticas de SEO e performance",
+                      description: t("experience.topics-freelance.3"),
                     },
                     {
-                      description:
-                        "Entrega de projetos dentro do prazo estabelecido",
+                      description: t("experience.topics-freelance.4"),
                     },
                     {
-                      description:
-                        "Criação de componentes reutilizáveis e escaláveis",
+                      description: t("experience.topics-freelance.5"),
                     },
                   ]}
                 />
@@ -87,31 +83,27 @@ const ExperienceSection = () => {
               <div className="relative flex-shrink-0 w-2 h-2 bg-[#ffffff] rounded-full shadow-lg"></div>
               <div className="w-1/2 pl-8">
                 <CardXp
-                  date="Ago. 2024 - atualmente"
-                  local="Bauru-SP - Presencial"
+                  date={t("experience.date-hdinox")}
+                  local={t("experience.local-hdinox")}
                   bussiness="HD Inox"
                   title={t("experience.2024-title-hdinox")}
                   description={t("experience.2024-paragraph-hdinox")}
                   dataAos={"fade-left"}
                   achievementTopics={[
                     {
-                      description:
-                        "Desenvolvimento de disciplina e pontualidade no trabalho",
+                      description: t("experience.topics-hdinox.1"),
                     },
                     {
-                      description: "Trabalho em equipe e comunicação eficaz",
+                      description: t("experience.topics-hdinox.2"),
                     },
                     {
-                      description:
-                        "Organização de processos produtivos e controle de classe",
+                      description: t("experience.topics-hdinox.3"),
                     },
                     {
-                      description:
-                        "Responsabilidade na gestão de materiais e equipamentos",
+                      description: t("experience.topics-hdinox.4"),
                     },
                     {
-                      description:
-                        "Adaptabilidade a demandas e ritmos de produção diversos",
+                      description: t("experience.topics-hdinox.5"),
                     },
                   ]}
                 />

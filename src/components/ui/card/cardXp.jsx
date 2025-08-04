@@ -67,7 +67,7 @@ const CardXp = ({
             <div>
               <div className="flex items-center gap-2 mb-1.5">
                 <LiaAwardSolid fill="#5564FF" size={18} />
-                <h4 className="font-[500]">Aprendizados</h4>
+                <h4 className="font-[500]">{t("experience.learning")}</h4>
               </div>
               <ul className="flex flex-col gap-1">
                 {achievementTopics.map((item, index) => (
