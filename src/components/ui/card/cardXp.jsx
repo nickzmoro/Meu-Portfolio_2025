@@ -21,7 +21,7 @@ const CardXp = ({
   return (
     <>
       <div
-        className="card-container group relative overflow-hidden px-7 py-7 bg-[#ffffff1e] rounded-xl border border-[#ffffff17] min-w-[500px] hover:shadow-[0_8px_30px_-4px_hsl(233_100%_67%_/0.1)]"
+        className="card-container group relative overflow-hidden px-7 py-7 bg-[#ffffff1e] rounded-xl border border-[#ffffff17] min-w-[500px] max-lg:min-w-[fit-content] hover:shadow-[0_8px_30px_-4px_hsl(233_100%_67%_/0.1)]"
         data-aos={dataAos}
       >
         <div className="absolute inset-x-0 top-0 h-1 bg-[#5564FF]" />
@@ -30,20 +30,36 @@ const CardXp = ({
           <h3 className="text-[1.15rem]/[1.3] font-semibold mb-2 group-hover:text-[#5564FF] transition-all ease-in-out duration-200">
             {title}
           </h3>
-          <div className="flex items-center gap-3">
+          <div className="flex items-center gap-3 max-sm:gap-1 flex-wrap">
             <div className="flex items-center font-semibold">
               <p>{bussiness}</p>
             </div>
-            <div className="flex items-center gap-1.5">
-              <FaMapPin fill="#9CA3A4" size={12} />
-              <span className="text-gray-400 text-[0.95rem]">{local}</span>
-            </div>
-            <div className="flex items-center gap-1.5">
-              <FaRegCalendar fill="#9CA3A4" size={12} />
-              <span className="text-gray-400 text-[0.95rem]">{date}</span>
+            <div className="flex items-center gap-3 max-sm:gap-2.5">
+              <div className="flex items-center gap-1.5">
+                <FaMapPin
+                  fill="#9CA3A4"
+                  size={12}
+                  className="max-sm:w-[10px]"
+                />
+                <span className="text-gray-400 text-[0.95rem] max-sm:text-[0.8rem]">
+                  {local}
+                </span>
+              </div>
+              <div className="flex items-center gap-1.5">
+                <FaRegCalendar
+                  fill="#9CA3A4"
+                  size={12}
+                  className="max-sm:w-[10px]"
+                />
+                <span className="text-gray-400 text-[0.95rem] max-sm:text-[0.8rem]">
+                  {date}
+                </span>
+              </div>
             </div>
           </div>
-          <p className="mt-2 text-gray-300 text-[0.95rem]">{description}</p>
+          <p className="mt-2 text-gray-300 text-[0.95rem] max-lg:mt-3">
+            {description}
+          </p>
         </div>
         {technologies && technologies.length > 0 && (
           <>

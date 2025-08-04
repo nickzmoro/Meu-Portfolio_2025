@@ -21,14 +21,14 @@ const ExperienceSection = () => {
           <h2 className="subtitle">{t("experience.title")}</h2>
           <div className="line-divisor-content mt-2"></div>
         </div>
-        <div className="timeline-container relative max-w-6xl w-screen mx-auto mt-10">
+        <div className="timeline-container relative max-w-6xl w-screen mx-auto mt-10 max-lg:max-w-full">
           {/* Linha central da timeline */}
-          <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-white/20"></div>
+          <div className="absolute left-1/2 transform -translate-x-1/2 w-0.5 h-full bg-white/20 max-lg:left-0 max-lg:hidden"></div>
 
-          <div className="space-y-16">
+          <div className="space-y-16 max-lg:space-y-10">
             {/* Primeiro item - Esquerda */}
-            <div className="flex items-center">
-              <div className="w-1/2 pr-8">
+            <div className="flex items-center max-lg:flex-row-reverse">
+              <div className="w-1/2 pr-8 max-lg:w-full max-lg:pr-0">
                 <CardXp
                   date={t("experience.date-freelance")}
                   local={t("experience.local-freelance")}
@@ -73,15 +73,15 @@ const ExperienceSection = () => {
                   ]}
                 />
               </div>
-              <div className="relative flex-shrink-0 w-2 h-2 bg-[#ffffff] rounded-full shadow-lg"></div>
-              <div className="w-1/2 pl-8"></div>
+              <div className="relative flex-shrink-0 w-2 h-2 bg-[#ffffff] rounded-full shadow-lg max-lg:hidden"></div>
+              <div className="w-1/2 pl-8 max-lg:hidden"></div>
             </div>
 
             {/* Segundo item - Direita */}
             <div className="flex items-center">
-              <div className="w-1/2 pr-8"></div>
-              <div className="relative flex-shrink-0 w-2 h-2 bg-[#ffffff] rounded-full shadow-lg"></div>
-              <div className="w-1/2 pl-8">
+              <div className="w-1/2 pr-8 max-lg:hidden"></div>
+              <div className="relative flex-shrink-0 w-2 h-2 bg-[#ffffff] rounded-full shadow-lg max-lg:hidden"></div>
+              <div className="w-1/2 pl-8 max-lg:w-full max-lg:pl-0">
                 <CardXp
                   date={t("experience.date-hdinox")}
                   local={t("experience.local-hdinox")}
